@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* Visual rich editor styles
+======================================== */
+h1 {
+	padding: 24px 20px;
+	background-color: #efefef;
+}
+
+h2 {
+	padding: 24px 20px;
+	background-color: #efefef;
+}
+
+h3 {
+	padding: 24px 20px;
+	background-color: #efefef;
+}
+
+h4 {
+	padding: 24px 20px;
+	background-color: #efefef;
+}
+
+h5 {
+	padding: 24px 20px;
+	background-color: #efefef;
+}
+
+h6 {
+	padding: 24px 20px;
+	background-color: #efefef;
+}
+
+p {
+	margin-bottom: 1em;
+	font-size: 16px;
+	line-height: 1.7em;
+}
+
+blockquote {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+blockquote p {
+	color: #999999;
+	font-style: italic;
+}
