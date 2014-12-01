@@ -7,7 +7,7 @@ jQuery(function(){
 	var target = jQuery(".fixBox");
 	var targetHeight = target.outerHeight();
 	var targetPosition = target.position();
-	var footer = jQuery("footer");
+	var footer = jQuery("#snsbutton");
 	var footerHeight = footer.outerHeight();
 	jQuery(window).resize(function(){
 		windowHeight = jQuery(this).height();
