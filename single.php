@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- sideFixed -->
 <script type="text/javascript">
-jQuery(function(){
+jQuery(window).load(function(){
 	var contentHeight = jQuery("html, body").height();
 	var windowHeight = jQuery(window).height();
 	var target = jQuery(".fixBox");
@@ -21,7 +21,7 @@ jQuery(function(){
 				target.css({position:"fixed", bottom: footerHeight - (contentHeight - visibleBottom)});
 			} else {
 				target.css({position:"fixed"}).css({bottom: 0}).css({"margin-left": 774});
-				alert(visibleBottom);
+				
 			}
 		} else {
 			target.css({position:"static", bottom: "auto" ,"margin-left":0});
