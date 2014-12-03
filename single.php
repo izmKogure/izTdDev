@@ -14,14 +14,13 @@ jQuery(function(){
 	});
 	jQuery(window).scroll(function(){
 		var scrollTop = jQuery(this).scrollTop();
-		var visibleBottom = scrollTop + windowHeight -220;
+		var visibleBottom = scrollTop + windowHeight -455;
 		var targetBottom = targetPosition.top + targetHeight;
 		if(visibleBottom >= targetBottom) {
 			if(footerHeight > contentHeight - visibleBottom) {
 				target.css({position:"fixed", bottom: footerHeight - (contentHeight - visibleBottom)});
 			} else {
 				target.css({position:"fixed"}).css({bottom: 0}).css({"margin-left": 774});
-				alert(visibleBottom);
 			}
 		} else {
 			target.css({position:"static", bottom: "auto" ,"margin-left":0});
