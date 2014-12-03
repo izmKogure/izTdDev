@@ -17,7 +17,7 @@ jQuery(function(){
 		var visibleBottom = scrollTop + windowHeight;
 		var targetBottom = targetPosition.top + targetHeight;
 		if(visibleBottom >= targetBottom) {
-			if(footerHeight+220 > contentHeight - visibleBottom) {
+			if(footerHeight-220 > contentHeight - visibleBottom) {
 				target.css({position:"fixed", bottom: footerHeight - (contentHeight - visibleBottom)});
 			} else {
 				target.css({position:"fixed"}).css({bottom: 0}).css({"margin-left": 774});
