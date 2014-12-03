@@ -534,11 +534,6 @@ article #update ul li a {
 	line-height: 1.5em;
 }
 
-article #update ul li img {
-	border-radius: 3px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-
 /* entry content styles
 ======================================== */
 .entry-content h1,
