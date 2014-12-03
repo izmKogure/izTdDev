@@ -14,9 +14,9 @@ jQuery(function(){
 	});
 	jQuery(window).scroll(function(){
 		var scrollTop = jQuery(this).scrollTop();
-		var visibleBottom = scrollTop + windowHeight -455;
+		var visibleBottom = scrollTop + windowHeight;
 		var targetBottom = targetPosition.top + targetHeight;
-		if(visibleBottom >= targetBottom) {
+		if(visibleBottom-475 >= targetBottom) {
 			if(footerHeight > contentHeight - visibleBottom) {
 				target.css({position:"fixed", bottom: footerHeight - (contentHeight - visibleBottom)});
 			} else {
