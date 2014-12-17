@@ -85,7 +85,7 @@ jQuery(function(){
 			<dl>
 				<dt><div class="thumb"><?php echo get_avatar(get_the_author_id(), 200); ?></div></dt>
 				<dd class="firstChild"><h3>この記事を書いた人</h3></dd>
-				<dd class="list"><p><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author_meta( 'display_name' ); ?></a></p></dd>
+				<dd class="list"><p><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">他の記事はこちら</a></p></dd>
 				<dd class="worker"><p><?php the_author_meta('worker'); ?>&nbsp;&nbsp;<span><?php the_author(); ?></span></p></dd>
 				<dd class="description"><p><?php the_author_meta('user_description'); ?></p></dd>
 			</dl>	
