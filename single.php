@@ -112,7 +112,7 @@ jQuery(function(){
 			<!-- update -->
 			<div id="update">
 				<h3><img src="<?php echo get_template_directory_uri(); ?>/images/icon_related.gif" alt="icon_related" width="16" height="20">新着記事</h3>
-				<?php global $post; $update = get_posts( array( 'posts_per_page' => 6 ) ); ?>
+				<?php global $post; $update = get_posts( array( 'posts_per_page' => 6, 'orderby' => 'date', 'order' => 'DESC' ) ); ?>
 				<ul>
 				<?php if($update) : ?>
 					<?php foreach( $update as $post ) : setup_postdata($post); ?>
