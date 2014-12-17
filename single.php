@@ -112,21 +112,11 @@ jQuery(function(){
 			<!-- update -->
 			<div id="update">
 				<h3><img src="<?php echo get_template_directory_uri(); ?>/images/icon_related.gif" alt="icon_related" width="16" height="20">新着記事</h3>
-				<?php $update = get_posts( array( 'posts_per_page' => 6, 'orderby' => 'date', 'order' => 'DESC' ) ); ?>
-				<ul>
-				<?php if($update) : ?>
-					<?php foreach( $update as $post ) : setup_postdata($post); ?>
-					<li>
-						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(100,100) ); ?></a>
-						<a href="<?php the_permalink(); ?>"><?php the_time('Y年n月j日'); ?></a>
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-					</li>
-				<?php endforeach; ?>
-				<?php else : ?>
-					<p>新着作品はありません</p>
-				<?php endif; ?>
-				</ul>
-				<?php wp_reset_postdata(); ?>
+				<?php $hoges = get_posts( 'orderby=date&order=DESC' ); ?>
+         
+<?php foreach( $hoges as $post ) : setup_postdata( $post ); ?>
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+<?php endforeach; wp_reset_postdata(); ?>
 			</div>
 			<!-- /update -->
 				
