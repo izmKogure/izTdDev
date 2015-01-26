@@ -32,8 +32,8 @@
 	</div>
 	<!-- /snsButtom -->
 			
-	<footer class="clearfix">
-		<nav class="clearfix"><?php wp_nav_menu( array ( 'theme_location' => 'footer-nav' ) ); ?></nav>
+	<footer id="footer" class="clearfix"  role="contentinfo">
+		<nav class="global clearfix" role="navigation"><?php wp_nav_menu( array ( 'theme_location' => 'footer-nav' ) ); ?></nav>
 		<p><small>&copy;2014 izmaker Today</small></p>
 	</footer>
 	<!-- /footer -->

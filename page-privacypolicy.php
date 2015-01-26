@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <!-- container -->
 <div id="container" class="clearfix">
-	<!-- contents -->
-	<div id="contents">
+	<!-- main -->
+	<div id="main" role="main">
 		<div id="breadcrumb">
 		<?php echo get_breadcrumb_list(); ?>
 		</div>
@@ -81,7 +81,7 @@
 			<p>当社のウェブサイトは、お客様の個人情報を保護するために必要に応じて「SSL」に対応しています。 セキュリティ機能に対応したブラウザを使用することで、お客様が入力される個人情報が自動的に暗号化されて送受信されるため、 万が一、送信データが第三者に傍受された場合でも、内容が盗み取られる心配はありません。SSLに非対応のブラウザをご利用の場合は、 当社のウェブサイトにアクセス・情報の入力ができない場合があります。</p>
 		</div>
 	</div>
-	<!-- /contents -->
+	<!-- /main -->
 	
 	<!-- sidebar -->
 	<?php get_sidebar(); ?>

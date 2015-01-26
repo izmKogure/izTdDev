@@ -9,8 +9,8 @@
 			
 	<!-- container -->
 	<div id="container" class="clearfix">
-		<!-- contents -->
-		<div id="contents">
+		<!-- main -->
+		<div id="main" role="main">
 			<?php if(have_posts()): ?>
 			<?php while(have_posts()):the_post(); ?>
 			<dl class="<?php $cat = get_the_category(); $cat = $cat[0];{ echo $cat->category_nicename; } ?>">
@@ -29,7 +29,7 @@
 			</div>
 			<!-- /pager -->
 		</div>
-		<!-- /contents -->
+		<!-- /main -->
 		
 		<!-- sidebar -->
 		<?php get_sidebar(); ?>

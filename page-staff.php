@@ -1,7 +1,4 @@
 <?php get_header(); ?>
-	<!-- powertip Javascript file -->
-	<?php wp_enqueue_script('jquery.powertip.min', get_bloginfo('template_url') . '/js/jquery.powertip.min.js', array('jquery'), '1.0' ,true); ?> 
-	<?php wp_head(); ?>
 	<!-- powertip control -->
 	<script type="text/javascript">
 	jQuery(function() {
@@ -21,8 +18,8 @@
 
 <!-- container -->
 <div id="container" class="clearfix">
-	<!-- contents -->
-	<div id="contents">
+	<!-- main -->
+	<div id="main" role="main">
 		<div id="breadcrumb">
 		<?php echo get_breadcrumb_list(); ?>
 		</div>
@@ -100,7 +97,7 @@
 		</div>
 		<!-- /mainWrap -->
 	</div>
-	<!-- /contents -->
+	<!-- /main -->
 	
 	<!-- sidebar -->
 	<?php get_sidebar(); ?>

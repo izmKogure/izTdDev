@@ -2,7 +2,7 @@
 <!-- container -->
 <div id="container" class="clearfix">
 	<!-- contents -->
-	<div id="contents">
+	<div id="main" role="main">
 		<div id="breadcrumb">
 		<?php echo get_breadcrumb_list(); ?>
 		</div>
@@ -42,7 +42,7 @@
 		</div>
 		<!-- /mainWrap -->
 	</div>
-	<!-- /contents -->
+	<!-- /main -->
 	
 	<!-- sidebar -->
 	<?php get_sidebar(); ?>

@@ -19,7 +19,7 @@ a:active {
 	background-color: #ffffff;
 }
 
-#contents {
+#main {
 	float: left;
 	width: 774px;
 }
@@ -208,27 +208,27 @@ nav form fieldset input {
 
 /* breadcrumb styles
 ======================================== */
-#contents #breadcrumb {
+#main #breadcrumb {
 	margin-bottom: 10px;
 	color: #3c3c3c;
 	font-size: 12px;
 }
 
-#contents #breadcrumb ul li {
+#main #breadcrumb ul li {
 	display: inline;
 }
 
-#contents #breadcrumb ul li+li:before {
+#main #breadcrumb ul li+li:before {
 	content: "\00a0>\00a0 ";
 }
 
-#contents #breadcrumb a:link, 
-#contents #breadcrumb a:visited {
+#main #breadcrumb a:link, 
+#main #breadcrumb a:visited {
 	color: #0296d4;
 }
 
-#contents #breadcrumb a:active, 
-#contents #breadcrumb a:hover {
+#main #breadcrumb a:active, 
+#main #breadcrumb a:hover {
 	color: #0296d4;
 }
 
