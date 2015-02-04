@@ -520,8 +520,8 @@ article footer.entry-footer #update ul li a {
 }
 
 article footer.entry-footer #update ul li img {
-	border-radius: 3px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 0;
+	box-shadow: none;
 }
 
 /* comment　form styles
