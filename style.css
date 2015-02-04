@@ -479,6 +479,7 @@ body.tag #container #main h2 img {
 
 #container #main dl dt .thumb {
 	position: relative;
+	background-color: #ffffff;
 }
 
 #container #main dl dt .thumb img.new {
