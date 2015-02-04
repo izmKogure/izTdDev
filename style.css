@@ -151,15 +151,15 @@ a:active {
 	width: 774px;
 }
 
-#sidebar {
+aside {
 	float: right;
 	width: 300px;
 }
 
-body.author #sidebar,
-body.category #sidebar,
-body.search #sidebar,
-body.tag #sidebar {
+body.author aside,
+body.category aside,
+body.search aside,
+body.tag aside {
 	padding-top: 22px;
 }
 
@@ -348,7 +348,7 @@ nav form fieldset input {
 
 /* author styles
 ======================================== */
-body.author #container #main h2 {
+body.author #main h2 {
 	width: 745px;
 	margin-bottom: 12px;
 	background-color: #24afc8;
@@ -358,7 +358,7 @@ body.author #container #main h2 {
 	line-height: 40px;
 }
 
-body.author #container #main h2 img {
+body.author #main h2 img {
 	margin: 0 10px;
 	vertical-align: -3px;
 }
@@ -366,11 +366,11 @@ body.author #container #main h2 img {
 /* category styles
 ======================================== */
 /* todayブログ */
-body.category #container #main h2.blog,
-body.category #container #main h2.news,
-body.category #container #main h2.technique,
-body.category #container #main h2.interesting,
-body.category #container #main h2.life {
+body.category #main h2.blog,
+body.category #main h2.news,
+body.category #main h2.technique,
+body.category #main h2.interesting,
+body.category #main h2.life {
 	width: 745px;
 	margin-bottom: 12px;
 	background-color: #dd495a;
@@ -381,12 +381,12 @@ body.category #container #main h2.life {
 }
 
 /* izmaker */
-body.category #container #main h2.izmaker,
-body.category #container #main h2.info,
-body.category #container #main h2.campaign,
-body.category #container #main h2.pickup,
-body.category #container #main h2.useful,
-body.category #container #main h2.magazine {
+body.category #main h2.izmaker,
+body.category #main h2.info,
+body.category #main h2.campaign,
+body.category #main h2.pickup,
+body.category #main h2.useful,
+body.category #main h2.magazine {
 	width: 745px;
 	margin-bottom: 12px;
 	background-color: #22b6a3;
@@ -396,14 +396,14 @@ body.category #container #main h2.magazine {
 	line-height: 40px;
 }
 
-body.category #container #main h2 img {
+body.category #main h2 img {
 	margin: 0 10px;
 	vertical-align: -3px;
 }
 
 /* search styles
 ======================================== */
-body.search #container #main h2 {
+body.search #main h2 {
 	width: 745px;
 	margin-bottom: 12px;
 	background-color: #6a6a6a;
@@ -413,31 +413,31 @@ body.search #container #main h2 {
 	line-height: 40px;
 }
 
-body.search #container #main h2 img {
+body.search #main h2 img {
 	margin: 0 10px;
 	vertical-align: -3px;
 }
 
-body.search-no-results #container #main h3 {
+body.search-no-results #main h3 {
 	line-height: 1.8em;
 }
 
-body.search-no-results #container #main p {
+body.search-no-results #main p {
 	margin-bottom: 20px;
 	line-height: 1.8em;
 }
 
-body.search-no-results #container #main form fieldset input#search {
+body.search-no-results #main form fieldset input#search {
 	margin-right: 12px;
 }
 
-body.search-no-results #container #main form fieldset input {
+body.search-no-results #main form fieldset input {
 	vertical-align: middle;
 }
 
 /* tag styles
 ======================================== */
-body.tag #container #main h2 {
+body.tag #main h2 {
 	width: 745px;
 	margin-bottom: 12px;
 	background-color: #6a6a6a;
@@ -447,14 +447,14 @@ body.tag #container #main h2 {
 	line-height: 40px;
 }
 
-body.tag #container #main h2 img {
+body.tag #main h2 img {
 	margin: 0 10px;
 	vertical-align: -3px;
 }
 
 /* contents styles
 ======================================== */
-#container #main dl {
+#main dl {
 	position: relative;
 	width: 745px;
 	height: 140px;
@@ -463,39 +463,39 @@ body.tag #container #main h2 img {
 }
 
 /* izmaker */
-#container #main dl.izmaker,
-#container #main dl.info,
-#container #main dl.campaign,
-#container #main dl.pickup,
-#container #main dl.useful,
-#container #main dl.magazine {
+#main dl.izmaker,
+#main dl.info,
+#main dl.campaign,
+#main dl.pickup,
+#main dl.useful,
+#main dl.magazine {
 	background-color: #22b6a3;
 }
 
-#container #main dl dt {
+#main dl dt {
 	width: 200px;
 	height: 140px;
 }
 
-#container #main dl dt .thumb {
+#main dl dt .thumb {
 	position: relative;
 	background-color: #ffffff;
 }
 
-#container #main dl dt .thumb img.new {
+#main dl dt .thumb img.new {
 	z-index: 1;
 	position: absolute;
 	top: 0px;
 	left: 0px;
 }
 
-#container #main dl dd.firstChild {
+#main dl dd.firstChild {
 	height: 20px;
 	margin: -128px 0 12px 0;
 	padding-left: 200px;
 }
 
-#container #main dl dd #category {
+#main dl dd #category {
 	display: inline-block;
 	padding: 5px;
 	background-color: #ffffff;
@@ -506,57 +506,57 @@ body.tag #container #main h2 img {
 }
 
 /* izmaker */
-#container #main dl dd #category.izmaker,
-#container #main dl dd #category.info,
-#container #main dl dd #category.campaign,
-#container #main dl dd #category.pickup,
-#container #main dl dd #category.useful,
-#container #main dl dd #category.magazine {
+#main dl dd #category.izmaker,
+#main dl dd #category.info,
+#main dl dd #category.campaign,
+#main dl dd #category.pickup,
+#main dl dd #category.useful,
+#main dl dd #category.magazine {
 	color: #22b6a3;
 }
 
-#container #main dl dd.ttl {
+#main dl dd.ttl {
 	margin-bottom: 4px;
 	padding: 0 20px 0 220px; 
 }
 
-#container #main dl dd.ttl h3 a:link, 
-#container #main dl dd.ttl h3 a:visited,
-#container #main dl dd.ttl h3 a:active, 
-#container #main dl dd.ttl h3 a:hover {
+#main dl dd.ttl h3 a:link, 
+#main dl dd.ttl h3 a:visited,
+#main dl dd.ttl h3 a:active, 
+#main dl dd.ttl h3 a:hover {
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 1.6em;
 }
 
-#container #main dl dd.date {
+#main dl dd.date {
 	padding-left: 220px; 
 	color: #ffffff;
 	font-size: 14px;
 }
 
-#container #main dl dd.more {
+#main dl dd.more {
 	position: absolute;
 	bottom: 20px;
 	padding-left: 640px;
 }
 
-#container #main dl dd.more p a:link, 
-#container #main dl dd.more p a:visited,
-#container #main dl dd.more p a:active, 
-#container #main dl dd.more p a:hover {
+#main dl dd.more p a:link, 
+#main dl dd.more p a:visited,
+#main dl dd.more p a:active, 
+#main dl dd.more p a:hover {
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: bold;
 }
 
 /* page navi */
-#container #main #pager .wp-pagenavi span {
+#main #pager .wp-pagenavi span {
 	border-style: none;
 }
 
-#container #main #pager .wp-pagenavi span.current {
+#main #pager .wp-pagenavi span.current {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
@@ -570,7 +570,7 @@ body.tag #container #main h2 img {
 	text-align: center;
 }
 
-#container #main #pager .wp-pagenavi a {
+#main #pager .wp-pagenavi a {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
@@ -584,7 +584,7 @@ body.tag #container #main h2 img {
 	text-align: center;
 }
 
-#container #main #pager .wp-pagenavi a.first {
+#main #pager .wp-pagenavi a.first {
 	display: inline-block;
 	width: 60px;
 	height: 30px;
@@ -598,7 +598,7 @@ body.tag #container #main h2 img {
 	text-align: center;
 }
 
-#container #main #pager .wp-pagenavi a.last {
+#main #pager .wp-pagenavi a.last {
 	display: inline-block;
 	width: 60px;
 	height: 30px;
@@ -614,53 +614,53 @@ body.tag #container #main h2 img {
 
 /* sidebar styles
 ======================================== */
-#container #sidebar aside a.izmaker img,
-#container #sidebar aside a.kokoro img,
-#container #sidebar aside a.sinagawa img,
-#container #sidebar aside a.raitank img,
-#container #sidebar aside #adsense,
-#container #sidebar aside #facebook {
+aside a.izmaker img,
+aside a.kokoro img,
+aside a.sinagawa img,
+aside a.raitank img,
+aside #adsense,
+aside #facebook {
 	margin-bottom: 20px;
 }
 
-#container #sidebar aside .adwrap a img {
+aside .adwrap a img {
 	margin-bottom: 10px;
 }
 
-#container #sidebar aside .adwrap a:nth-child(2n+1) img {
+aside .adwrap a:nth-child(2n+1) img {
 	margin-right: 20px;
 }
 
 /* PopularPosts */
-#container #sidebar #PopularPosts {
+aside #PopularPosts {
 	margin-bottom: 24px;
 	padding: 10px 16px;
 	border: 1px solid #d1d1d1;
 }
 
-#container #sidebar #PopularPosts h3 {
+aside #PopularPosts h3 {
 	margin-bottom: 14px;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-#container #sidebar #PopularPosts img {
+aside #PopularPosts img {
 	margin-right: 4px;
 	vertical-align: -8px;
 }
 
-#container #sidebar #PopularPosts ol {
+aside #PopularPosts ol {
 	margin: 0;
     counter-reset: li;
 }
 
-#container #sidebar #PopularPosts li {
+aside #PopularPosts li {
 	position: relative;
 	margin-bottom: 20px;
 	font-size: 12px;
 }
 
-#container #sidebar #PopularPosts ol li:before {
+aside #PopularPosts ol li:before {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -675,18 +675,18 @@ body.tag #container #main h2 img {
 	counter-increment: li;
 }
 
-#container #sidebar #PopularPosts li img {
+aside #PopularPosts li img {
 	float: left;
 	width: 80px;
 	margin-right: 10px;
 }
 
-#container #sidebar #PopularPosts .description {
+aside #PopularPosts .description {
 	float: right;
 	width: 170px;
 }
 
-#container #sidebar #PopularPosts .description .rankCategory a {
+aside #PopularPosts .description .rankCategory a {
 	display: block;
 	width: 85px;
 	margin-bottom: 10px;
@@ -699,21 +699,21 @@ body.tag #container #main h2 img {
 }
 
 /* todayブログ */
-#container #sidebar #PopularPosts .description .rankCategory a#blog,
-#container #sidebar #PopularPosts .description .rankCategory a#news,
-#container #sidebar #PopularPosts .description .rankCategory a#technique,
-#container #sidebar #PopularPosts .description .rankCategory a#interesting,
-#container #sidebar #PopularPosts .description .rankCategory a#life {
+aside #PopularPosts .description .rankCategory a#blog,
+aside #PopularPosts .description .rankCategory a#news,
+aside #PopularPosts .description .rankCategory a#technique,
+aside #PopularPosts .description .rankCategory a#interesting,
+aside #PopularPosts .description .rankCategory a#life {
 	background-color: #dd495a;
 }
 
 /* izmaker */
-#container #sidebar #PopularPosts .description .rankCategory a#izmaker,
-#container #sidebar #PopularPosts .description .rankCategory a#info,
-#container #sidebar #PopularPosts .description .rankCategory a#campaign,
-#container #sidebar #PopularPosts .description .rankCategory a#pickup,
-#container #sidebar #PopularPosts .description .rankCategory a#useful,
-#container #sidebar #PopularPosts .description .rankCategory a#magazine {
+aside #PopularPosts .description .rankCategory a#izmaker,
+aside #PopularPosts .description .rankCategory a#info,
+aside #PopularPosts .description .rankCategory a#campaign,
+aside #PopularPosts .description .rankCategory a#pickup,
+aside #PopularPosts .description .rankCategory a#useful,
+aside #PopularPosts .description .rankCategory a#magazine {
 	background-color: #22b6a3;
 }
 

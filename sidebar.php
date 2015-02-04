@@ -1,6 +1,5 @@
-<div id="sidebar" class="fixBox">
 	<aside role="complementary">
-		<!-- adsense -->
+	<!-- adsense -->
 		<div id="adsense">
 			<div style="float:left; margin-right:20px;">
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -76,5 +75,4 @@
 		</div>
 		<a class="izmaker" href="http://izmaker.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/banner_today_izmaker.png" alt="izmaker" width="300" height="300"></a>
 	</aside>
-</div>
-<!-- /sidebar -->
+	<!-- /sidebar -->

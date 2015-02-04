@@ -24,37 +24,16 @@ a:active {
 	width: 774px;
 }
 
-#sidebar {
+aside {
 	float: right;
 	width: 300px;
 }
 
-body.author #sidebar,
-body.category #sidebar,
-body.search #sidebar,
-body.tag #sidebar {
+body.author aside,
+body.category aside,
+body.search aside,
+body.tag aside {
 	padding-top: 22px;
-}
-
-/* Utility styles
-======================================== */
-/* clearfix */
-.clearfix:after { 
-	display:block;
-	clear:both;
-	height:0px;
-	visibility:hidden;
-	content:".";
-}
-.clearfix {
-	min-height: 1px; /*IE6、7*/
-}
-* html .clearfix {
-	height: 1px;
-	/*\*//*/ /*MAC IE5.x*/
-	height: auto;
-	overflow: hidden;
-	/**/
 }
 
 /* header styles
@@ -284,53 +263,53 @@ nav form fieldset input {
 
 /* sidebar styles
 ======================================== */
-#container #sidebar aside a.izmaker img,
-#container #sidebar aside a.kokoro img,
-#container #sidebar aside a.sinagawa img,
-#container #sidebar aside a.raitank img,
-#container #sidebar aside #adsense,
-#container #sidebar aside #facebook {
+aside a.izmaker img,
+aside a.kokoro img,
+aside a.sinagawa img,
+aside a.raitank img,
+aside #adsense,
+aside #facebook {
 	margin-bottom: 20px;
 }
 
-#container #sidebar aside .adwrap a img {
+aside .adwrap a img {
 	margin-bottom: 10px;
 }
 
-#container #sidebar aside .adwrap a:nth-child(2n+1) img {
+aside .adwrap a:nth-child(2n+1) img {
 	margin-right: 20px;
 }
 
 /* PopularPosts */
-#container #sidebar #PopularPosts {
+aside #PopularPosts {
 	margin-bottom: 24px;
 	padding: 10px 16px;
 	border: 1px solid #d1d1d1;
 }
 
-#container #sidebar #PopularPosts h3 {
+aside #PopularPosts h3 {
 	margin-bottom: 14px;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-#container #sidebar #PopularPosts img {
+aside #PopularPosts img {
 	margin-right: 4px;
 	vertical-align: -8px;
 }
 
-#container #sidebar #PopularPosts ol {
+aside #PopularPosts ol {
 	margin: 0;
     counter-reset: li;
 }
 
-#container #sidebar #PopularPosts li {
+aside #PopularPosts li {
 	position: relative;
 	margin-bottom: 20px;
 	font-size: 12px;
 }
 
-#container #sidebar #PopularPosts ol li:before {
+aside #PopularPosts ol li:before {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -345,18 +324,18 @@ nav form fieldset input {
 	counter-increment: li;
 }
 
-#container #sidebar #PopularPosts li img {
+aside #PopularPosts li img {
 	float: left;
 	width: 80px;
 	margin-right: 10px;
 }
 
-#container #sidebar #PopularPosts .description {
+aside #PopularPosts .description {
 	float: right;
 	width: 170px;
 }
 
-#container #sidebar #PopularPosts .description .rankCategory a {
+aside #PopularPosts .description .rankCategory a {
 	display: block;
 	width: 85px;
 	margin-bottom: 10px;
@@ -369,21 +348,21 @@ nav form fieldset input {
 }
 
 /* todayブログ */
-#container #sidebar #PopularPosts .description .rankCategory a#blog,
-#container #sidebar #PopularPosts .description .rankCategory a#news,
-#container #sidebar #PopularPosts .description .rankCategory a#technique,
-#container #sidebar #PopularPosts .description .rankCategory a#interesting,
-#container #sidebar #PopularPosts .description .rankCategory a#life {
+aside #PopularPosts .description .rankCategory a#blog,
+aside #PopularPosts .description .rankCategory a#news,
+aside #PopularPosts .description .rankCategory a#technique,
+aside #PopularPosts .description .rankCategory a#interesting,
+aside #PopularPosts .description .rankCategory a#life {
 	background-color: #dd495a;
 }
 
 /* izmaker */
-#container #sidebar #PopularPosts .description .rankCategory a#izmaker,
-#container #sidebar #PopularPosts .description .rankCategory a#info,
-#container #sidebar #PopularPosts .description .rankCategory a#campaign,
-#container #sidebar #PopularPosts .description .rankCategory a#pickup,
-#container #sidebar #PopularPosts .description .rankCategory a#useful,
-#container #sidebar #PopularPosts .description .rankCategory a#magazine {
+aside #PopularPosts .description .rankCategory a#izmaker,
+aside #PopularPosts .description .rankCategory a#info,
+aside #PopularPosts .description .rankCategory a#campaign,
+aside #PopularPosts .description .rankCategory a#pickup,
+aside #PopularPosts .description .rankCategory a#useful,
+aside #PopularPosts .description .rankCategory a#magazine {
 	background-color: #22b6a3;
 }
 

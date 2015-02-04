@@ -2,12 +2,12 @@
 //JavaScript
 if (!is_admin()) {
 	function register_script(){
-		wp_register_script('side-fixed.min', get_bloginfo('template_directory').'/js/side-fixed.min.js');
+		wp_register_script('side-fixed', get_bloginfo('template_directory').'/js/side-fixed.js');
 	}
 	function add_script() {
 		register_script();
 		if (is_single()) {
-			wp_enqueue_script('side-fixed.min');
+			wp_enqueue_script('side-fixed');
 		}
 	}
 	add_action('wp_print_scripts', 'add_script');
