@@ -8,6 +8,11 @@
 	});
 })(jQuery);
 </script>
+<script>
+jQuery(window).load(function(){
+  jQuery(document.body).trigger('sticky_kit:recalc');
+});
+</script>
 <!-- content -->
 <div id="content" class="clearfix">
 	<!-- main -->
