@@ -3,14 +3,16 @@
 (function($){
 	$(function() {
 		return $('aside').stick_in_parent({
-			parent: '#content'
+			offset_top:20
 		});
 	});
 })(jQuery);
 </script>
 <script>
-jQuery(window).load(function(){
-  jQuery(document.body).trigger('sticky_kit:recalc');
+jQuery(function(){
+	setTimeout(function(){
+		jQuery(document.body).trigger('sticky_kit:recalc');
+	},2000);
 });
 </script>
 <!-- content -->
