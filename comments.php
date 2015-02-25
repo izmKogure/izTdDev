@@ -5,8 +5,8 @@ if(post_password_required()){
 }
 ?>
 
-<h3 class="commentsTitle">コメント&nbsp;(<?php echo get_comments_number(); ?>件)</h4>
-<div id="comments" class="commentsArea">
+<h3 class="comments-title">コメント&nbsp;(<?php echo get_comments_number(); ?>件)</h4>
+<div id="comments" class="comments-area">
 	<?php
 	$commenter = wp_get_current_commenter();
 	$req = get_option( 'require_name_email' );
@@ -29,7 +29,7 @@ if(post_password_required()){
 	<!-- /comments -->	
 	
 	<?php if(have_comments()): ?>
-		<ol class="commetnsList">
+		<ol class="commetns-list">
 			<?php
 			 wp_list_comments(array(
 			 'format' => 'html5'
@@ -40,9 +40,9 @@ if(post_password_required()){
 		<?php
 		if(get_comment_pages_count() > 1 && get_option('page_comments')):
 		?>
-		<nav class="commentsNavigation" role="navigation">
-			<div class="navPrevious"><?php previous_comments_link('&laquo;古いコメントへ'); ?></div>
-			<div class="navNext"><?php next_comments_link('新しいコメントへ&raquo;'); ?></div>
+		<nav class="comments-navigation" role="navigation">
+			<div class="nav-previous"><?php previous_comments_link('&laquo;古いコメントへ'); ?></div>
+			<div class="nav-next"><?php next_comments_link('新しいコメントへ&raquo;'); ?></div>
 		</nav>
 		<?php endif; ?>
 		<!-- /comment navigation -->	

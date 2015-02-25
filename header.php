@@ -38,15 +38,15 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-		<!-- wrapper -->
-		<div id="wrapper">
+		<!-- page -->
+		<div id="page">
 			<!-- header -->
 			<header id="header" role="banner">
 				<h1 class="logo"><a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.gif" alt="logo" width="594" height="81"></a></h1>
-				<nav class="global" role="navigation">
-					<div id="navWrap" class="clearfix">
-						<div id="navInner" class="clearfix">
-							<a id="homeButtom" href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/icon_navi.gif" alt="icon_navi" width="27" height="25"></a>
+				<nav id="global" role="navigation">
+					<div class="nav-wrapper clearfix">
+						<div class="nav-inner clearfix">
+							<a class="home-buttom" href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/icon_navi.gif" alt="icon_navi" width="27" height="25"></a>
 							<?php wp_nav_menu( array ( 'theme_location' => 'header-nav' ) ); ?>
 						</div>
 						<?php get_search_form(); ?>

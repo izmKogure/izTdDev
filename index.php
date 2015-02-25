@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<!-- /header -->
+<!-- /header -->
 			
 	<!-- slide -->
 	<div id="slide">
@@ -7,8 +7,8 @@
 	</div>
 	<!-- /slide -->
 			
-	<!-- container -->
-	<div id="container" class="clearfix">
+	<!-- content -->
+	<div id="content" class="clearfix">
 		<!-- main -->
 		<div id="main" role="main">
 			<?php if(have_posts()): ?>
@@ -23,11 +23,11 @@
 			<?php endwhile; else: ?>
 				<p>記事はありません。</p>
 			<?php endif; ?>
-			<!-- pager -->
-			<div id="pager">
+			<!-- navigation -->
+			<div id="navigation">
 			<?php wp_pagenavi(); ?>
 			</div>
-			<!-- /pager -->
+			<!-- /navigation -->
 		</div>
 		<!-- /main -->
 		
@@ -35,7 +35,7 @@
 		<?php get_sidebar(); ?>
 	
 	</div>
-	<!-- /container -->
+	<!-- /content -->
 			
 	<!-- footer -->
 	<?php get_footer(); ?>

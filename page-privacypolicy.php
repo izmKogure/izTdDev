@@ -1,12 +1,13 @@
 <?php get_header(); ?>
-<!-- container -->
-<div id="container" class="clearfix">
+<!-- content -->
+<div id="content" class="clearfix">
 	<!-- main -->
 	<div id="main" role="main">
 		<div id="breadcrumb">
 		<?php echo get_breadcrumb_list(); ?>
 		</div>
-		<div id="mainWrap">
+		<!-- privacypolicy-wrapper -->
+		<div id="privacypolicy-wrapper">
 			<h2><img src="<?php echo get_template_directory_uri(); ?>/images/icon_topics.png" alt="icon_topics" width="16" height="20">プライバシーポリシー</h2>
 			<p>　izmakerは、個人情報保護法令　第四章　個人情報取扱事業者の義務等　第一節　個人情報取扱事業者の義務（第十五条－第三十六条）に基づき、 以下の通り方針を定め、お客様のプライバシー・個人情報の保護における本方針を遵守するとともに内容を適宜見直し、その改善に努めます。</p>
 			<ul>
@@ -80,6 +81,7 @@
 			<h3>SSLについて</h3>
 			<p>当社のウェブサイトは、お客様の個人情報を保護するために必要に応じて「SSL」に対応しています。 セキュリティ機能に対応したブラウザを使用することで、お客様が入力される個人情報が自動的に暗号化されて送受信されるため、 万が一、送信データが第三者に傍受された場合でも、内容が盗み取られる心配はありません。SSLに非対応のブラウザをご利用の場合は、 当社のウェブサイトにアクセス・情報の入力ができない場合があります。</p>
 		</div>
+		<!-- /privacypolicy-wrapper -->
 	</div>
 	<!-- /main -->
 	
@@ -87,7 +89,7 @@
 	<?php get_sidebar(); ?>
 	
 </div>
-<!-- /container -->
+<!-- /content -->
 
 <!-- footer -->
 <?php get_footer(); ?>

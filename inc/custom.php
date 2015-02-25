@@ -91,3 +91,16 @@ $return = str_replace('<a', '<a rel="nofollow external"', $text);
 return $return;
 }
 add_filter('the_content', 'no_follow');
+
+//body_class()にページスラッグを追加する
+function pagename_class($classes = '') {
+    if (is_page()) {
+        $page = get_page(get_the_ID());
+        $classes[] = 'page-' . $page->post_name;
+        if ($page->post_parent) {
+            $classes[] = 'page-' . get_page_uri($page->post_parent) . '-child';
+       }
+  }
+  return $classes;
+}
+add_filter('body_class', 'pagename_class');

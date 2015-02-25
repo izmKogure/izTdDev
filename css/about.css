@@ -13,7 +13,7 @@ a:active {
 
 /* Layout styles
 ======================================== */
-#wrapper {
+#page {
 	width: 100%;
 	margin: 0 auto;
 	background-color: #ffffff;
@@ -52,23 +52,23 @@ header nav {
 	background-color: #3c3c3c;
 }
 
-header nav #navWrap {
+header nav .nav-wrapper {
 	width: 1074px;
 	margin: 0 auto;
 }
 
-header nav #navWrap #navInner {
+header nav .nav-wrapper .nav-inner {
 	float: left;
 	width: 400px;
 }
 
-header nav #navWrap #navInner a#homeButtom {
+header nav .nav-wrapper .nav-inner a.home-buttom {
 	float: left;
 	width: 30px;
 	margin: 8px 40px 8px 10px;
 }
 
-header nav #navWrap #navInner .menu-header-nav-container {
+header nav .nav-wrapper .nav-inner .menu-header-nav-container {
 	float: left;
 	width: 320px;
 }
@@ -179,7 +179,7 @@ nav form fieldset input {
 
 /* container styles
 ======================================== */
-#container {
+#content {
 	width: 1074px;
 	margin: 0 auto;
 	margin-bottom: 118px;
@@ -213,11 +213,11 @@ nav form fieldset input {
 
 /* about styles
 ======================================== */
-#mainWrap {
+#about-wrapper {
 	width: 745px;
 }
 
-#mainWrap h2 {
+#about-wrapper h2 {
 	margin-bottom: 20px;
 	background-color: #6a6a6a;
 	color: #ffffff;
@@ -226,12 +226,12 @@ nav form fieldset input {
 	line-height: 40px;
 }
 
-#mainWrap h2 img {
+#about-wrapper h2 img {
 	margin: 0 10px;
 	vertical-align: -3px;
 }
 
-#mainWrap h3 {
+#about-wrapper h3 {
 	margin-bottom: 20px;
 	padding-left: 20px;
 	background-color: #efefef;
@@ -241,33 +241,33 @@ nav form fieldset input {
 	line-height: 70px;
 }
 
-#mainWrap img {
+#about-wrapper img {
 	margin-bottom: 20px;
 }
 
-#mainWrap section#aboutIzmaker p {
+#about-wrapper section#about-izmaker p {
 	margin-bottom: 100px;
 	color: #3c3c3c;
 	font-size: 16px;
 	line-height: 1.5em;
 }
 
-#mainWrap section#aboutLink p {
+#about-wrapper section#about-link p {
 	margin-bottom: 40px;
 	color: #3c3c3c;
 	font-size: 16px;
 	line-height: 1.5em;
 }
 
-#mainWrap section#aboutLink p span {
+#about-wrapper section#about-link p span {
 	font-weight: bold;
 }
 
-#mainWrap section#aboutMail {
+#about-wrapper section#about-mail {
 	margin-bottom: 100px;
 }
 
-#mainWrap section#aboutMail p {
+#about-wrapper section#about-mail p {
 	margin-bottom: 60px;
 	color: #3c3c3c;
 	font-size: 16px;
@@ -319,49 +319,49 @@ aside a.izmaker img,
 aside a.kokoro img,
 aside a.sinagawa img,
 aside a.raitank img,
-aside #adsense,
+aside #google-adsense,
 aside #facebook {
 	margin-bottom: 20px;
 }
 
-aside .adwrap a img {
+aside .ads-wrapper a img {
 	margin-bottom: 10px;
 }
 
-aside .adwrap a:nth-child(2n+1) img {
+aside .ads-wrapper a:nth-child(2n+1) img {
 	margin-right: 20px;
 }
 
-/* PopularPosts */
-aside #PopularPosts {
+/* popular-posts */
+aside #popular-posts {
 	margin-bottom: 24px;
 	padding: 10px 16px;
 	border: 1px solid #d1d1d1;
 }
 
-aside #PopularPosts h3 {
+aside #popular-posts h3 {
 	margin-bottom: 14px;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-aside #PopularPosts img {
+aside #popular-posts img {
 	margin-right: 4px;
 	vertical-align: -8px;
 }
 
-aside #PopularPosts ol {
+aside #popular-posts ol {
 	margin: 0;
     counter-reset: li;
 }
 
-aside #PopularPosts li {
+aside #popular-posts li {
 	position: relative;
 	margin-bottom: 20px;
 	font-size: 12px;
 }
 
-aside #PopularPosts ol li:before {
+aside #popular-posts ol li:before {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -376,18 +376,18 @@ aside #PopularPosts ol li:before {
 	counter-increment: li;
 }
 
-aside #PopularPosts li img {
+aside #popular-posts li img {
 	float: left;
 	width: 80px;
 	margin-right: 10px;
 }
 
-aside #PopularPosts .description {
+aside #popular-posts .description {
 	float: right;
 	width: 170px;
 }
 
-aside #PopularPosts .description .rankCategory a {
+aside #popular-posts .description .rankCategory a {
 	display: block;
 	width: 85px;
 	margin-bottom: 10px;
@@ -400,27 +400,27 @@ aside #PopularPosts .description .rankCategory a {
 }
 
 /* todayブログ */
-aside #PopularPosts .description .rankCategory a#blog,
-aside #PopularPosts .description .rankCategory a#news,
-aside #PopularPosts .description .rankCategory a#technique,
-aside #PopularPosts .description .rankCategory a#interesting,
-aside #PopularPosts .description .rankCategory a#life {
+aside #popular-posts .description .rankCategory a#blog,
+aside #popular-posts .description .rankCategory a#news,
+aside #popular-posts .description .rankCategory a#technique,
+aside #popular-posts .description .rankCategory a#interesting,
+aside #popular-posts .description .rankCategory a#life {
 	background-color: #dd495a;
 }
 
 /* izmaker */
-aside #PopularPosts .description .rankCategory a#izmaker,
-aside #PopularPosts .description .rankCategory a#info,
-aside #PopularPosts .description .rankCategory a#campaign,
-aside #PopularPosts .description .rankCategory a#pickup,
-aside #PopularPosts .description .rankCategory a#useful,
-aside #PopularPosts .description .rankCategory a#magazine {
+aside #popular-posts .description .rankCategory a#izmaker,
+aside #popular-posts .description .rankCategory a#info,
+aside #popular-posts .description .rankCategory a#campaign,
+aside #popular-posts .description .rankCategory a#pickup,
+aside #popular-posts .description .rankCategory a#useful,
+aside #popular-posts .description .rankCategory a#magazine {
 	background-color: #22b6a3;
 }
 
-/* snsButtom styles
+/* footer-area styles
 ======================================== */
-#snsButtom {
+#footer-area {
 	height: 200px;
 	margin-bottom: 20px;
 	background-image: url(../images/bg_izmaker.png),url(../images/bg_white.gif);
@@ -429,31 +429,31 @@ aside #PopularPosts .description .rankCategory a#magazine {
 	background-color: #f7f7f7;
 }
 
-#snsButtom #wrap {
+#footer-area .sns-buttom {
 	width: 1074px;
 	margin: 0 auto;
 	padding: 58px 0;
 }
 
-#snsButtom #wrap ul li {
+#footer-area .sns-buttom ul li {
 	float: left;
 	width: 348px;
 }
 
-#snsButtom #wrap ul li .facebook,
-#snsButtom #wrap ul li .twitter {
+#footer-area .sns-buttom ul li .facebook,
+#footer-area .sns-buttom ul li .twitter {
 	overflow: hidden;
 	position: relative;
 }
 
-#snsButtom #wrap ul li .facebook #fb-root,
-#snsButtom #wrap ul li .twitter #tw-root {
+#footer-area .sns-buttom ul li .facebook #fb-root,
+#footer-area .sns-buttom ul li .twitter #tw-root {
 	position: absolute;
 	top: 66px;
     left: 124px;
 }
 
-#snsButtom #wrap ul li.center {
+#footer-area .sns-buttom ul li.center {
 	margin: 0 15px;
 }
 

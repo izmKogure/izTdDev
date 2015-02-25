@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<!-- powertip control -->
+<!-- powertip control -->
 	<script type="text/javascript">
 	jQuery(function() {
 	  jQuery('.mishiro').powerTip({placement: 'sw-alt'});
@@ -16,15 +16,15 @@
 	});
 	</script>
 
-<!-- container -->
-<div id="container" class="clearfix">
+<!-- content -->
+<div id="content" class="clearfix">
 	<!-- main -->
 	<div id="main" role="main">
 		<div id="breadcrumb">
 		<?php echo get_breadcrumb_list(); ?>
 		</div>
-		<!-- mainWrap -->
-		<div id="mainWrap">
+		<!-- staff-wrapper -->
+		<div id="staff-wrapper">
 			<h2><img src="<?php echo get_template_directory_uri(); ?>/images/icon_topics.png" alt="icon_topics" width="16" height="20">スタッフ紹介</h2>
 			<div class="clearfix">
 				<dl>
@@ -95,7 +95,7 @@
 				</dl>
 			</div>
 		</div>
-		<!-- /mainWrap -->
+		<!-- /staff-wrapper -->
 	</div>
 	<!-- /main -->
 	
@@ -103,7 +103,7 @@
 	<?php get_sidebar(); ?>
 	
 </div>
-<!-- /container -->
+<!-- /content -->
 	
 <!-- footer -->
 <?php get_footer(); ?>

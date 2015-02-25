@@ -13,7 +13,7 @@ a:active {
 
 /* Layout styles
 ======================================== */
-#wrapper {
+#page {
 	width: 100%;
 	margin: 0 auto;
 	background-color: #ffffff;
@@ -52,23 +52,23 @@ header nav {
 	background-color: #3c3c3c;
 }
 
-header nav #navWrap {
+header nav .nav-wrapper {
 	width: 1074px;
 	margin: 0 auto;
 }
 
-header nav #navWrap #navInner {
+header nav .nav-wrapper .nav-inner {
 	float: left;
 	width: 400px;
 }
 
-header nav #navWrap #navInner a#homeButtom {
+header nav .nav-wrapper .nav-inner a.home-buttom {
 	float: left;
 	width: 30px;
 	margin: 8px 40px 8px 10px;
 }
 
-header nav #navWrap #navInner .menu-header-nav-container {
+header nav .nav-wrapper .nav-inner .menu-header-nav-container {
 	float: left;
 	width: 320px;
 }
@@ -179,7 +179,7 @@ nav form fieldset input {
 
 /* container styles
 ======================================== */
-#container {
+#content {
 	width: 1074px;
 	margin: 0 auto;
 	margin-bottom: 118px;
@@ -250,17 +250,17 @@ article header.entry-header h1.entry-title {
 	line-height: 1.3em;
 }
 
-article header.entry-header .date {
+article header.entry-header .entry-date {
 	margin-bottom: 16px;
 	color: #3c3c3c;
 	font-size: 16px;
 }
 
-article header.entry-header .tag {        
+article header.entry-header .entry-tags {        
 	margin-bottom: 50px;	
 }
 
-article header.entry-header .tag a {
+article header.entry-header .entry-tags a {
 	display: inline-block;
 	margin: 0 10px 5px 0;
 	padding: 5px 10px;
@@ -270,10 +270,10 @@ article header.entry-header .tag a {
 	font-weight: bold;
 }
 
-article header.entry-header .tag a:link, 
-article header.entry-header .tag a:visited,
-article header.entry-header .tag a:hover, 
-article header.entry-header .tag a:active {
+article header.entry-header .entry-tags a:link, 
+article header.entry-header .entry-tags a:visited,
+article header.entry-header .entry-tags a:hover, 
+article header.entry-header .entry-tags a:active {
 	color: #ffffff;
 }
 
@@ -329,11 +329,11 @@ article footer.entry-footer {
 	margin-bottom: 0;
 }
 
-article footer.entry-footer #snsBtn {
+article footer.entry-footer #sns-btn {
 	margin-bottom: 50px;
 }
 
-article footer.entry-footer #snsBtn ul li {
+article footer.entry-footer #sns-btn ul li {
 	float: left;
 	margin-right: 10px;
 }
@@ -461,11 +461,11 @@ article footer.entry-footer #navigation .alignRight:hover {
 }
 
 /* relatedArticle */
-article footer.entry-footer #relatedArticle {
+article footer.entry-footer #related-article {
 	margin-bottom: 42px;
 }
 
-article footer.entry-footer #relatedArticle h3 {
+article footer.entry-footer #related-article h3 {
 	margin-bottom: 20px;
 	color: #3c3c3c;
 	font-size: 20px;
@@ -473,17 +473,17 @@ article footer.entry-footer #relatedArticle h3 {
 	line-height: 20px;
 }
 
-article footer.entry-footer #relatedArticle img {
+article footer.entry-footer #related-article img {
 	margin-right: 10px;
 	vertical-align: -3px;
 }
 
-article footer.entry-footer #relatedArticle li {
+article footer.entry-footer #related-article li {
 	margin-bottom: 10px;
 	padding-left: 10px;
 	background: url(../images/icon_blue.gif) no-repeat 0 50%;
 }
-article footer.entry-footer #relatedArticle li a {
+article footer.entry-footer #related-article li a {
 	color: #00b5d6;
 }
 
@@ -531,13 +531,13 @@ article footer.entry-footer #update ul li img {
 	box-shadow: none;
 }
 
-/* comment　form styles
+/* comment-form styles
 ======================================== */
-#commentForm {
+#comment-form {
 	border: solid 1px #000000;
 }
 
-#commentForm h3.commentsTitle {
+#comment-form h3.comments-title {
 	margin-bottom: 20px;
 	padding: 15px 20px;
 	background-color: #000000;
@@ -546,103 +546,103 @@ article footer.entry-footer #update ul li img {
 	font-weight: bold;
 }
 
-#commentForm .commentsArea .commetnsList {
+#comment-form .comments-area .commetns-list {
 	padding: 20px;
 }
 
-#commentForm .commentsArea ol li article.comment-body {
+#comment-form .comments-area ol li article.comment-body {
 	width: 100%;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	border-bottom: dotted 1px #a09898;
 }
 
-#commentForm footer.comment-meta {
+#comment-form footer.comment-meta {
 	margin-bottom: 0px;
 }
 
-#commentForm article footer .comment-author.vcard {
+#comment-form article footer .comment-author.vcard {
 	display: inline;
 }
 
-#commentForm footer.comment-meta .comment-author.vcard img {
+#comment-form footer.comment-meta .comment-author.vcard img {
 	display: none;
 }
 
-#commentForm footer.comment-meta .comment-author.vcard b.fn {
+#comment-form footer.comment-meta .comment-author.vcard b.fn {
 	color: #00b5d6;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-#commentForm footer.comment-meta .comment-author.vcard span.says {
+#comment-form footer.comment-meta .comment-author.vcard span.says {
 	display: none;
 }
 
-#commentForm article footer .comment-metadata {
+#comment-form article footer .comment-metadata {
 	display: inline;
 }
 
-#commentForm footer.comment-meta .comment-metadata a time {
+#comment-form footer.comment-meta .comment-metadata a time {
 	color: #1c1c1c;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-#commentForm footer.comment-meta .comment-metadata span.edit-link a.comment-edit-link {
+#comment-form footer.comment-meta .comment-metadata span.edit-link a.comment-edit-link {
 	font-size: 14px;
 }
 
-#commentForm #comments　.comment-content p {
+#comment-form #comments　.comment-content p {
 	margin-bottom: 1em;
 	font-size: 14px;
 	line-height: 1.6em;
 	word-wrap: break-word;
 }
 
-#commentForm #comments .reply {
+#comment-form #comments .reply {
 	text-align: right;
 }
 
-#commentForm #comments .reply a.comment-reply-link {
+#comment-form #comments .reply a.comment-reply-link {
 	font-size: 14px;
 	font-weight: bold;
 }
 
-#commentForm #comments ul.children li {
+#comment-form #comments ul.children li {
 	margin-left: 1em;
 }
 
-#commentForm .commentsArea .comment-respond {
+#comment-form .comments-area .comment-respond {
 	padding: 0 20px 20px 20px;
 }
 
-#commentForm p.comment-form-author label {
+#comment-form p.comment-form-author label {
 	color: #1c1c1c;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-#commentForm p.comment-form-author input#author {
+#comment-form p.comment-form-author input#author {
 	width: 390px;
 	height: 20px;
 }
 
-#commentForm p.comment-form-email input#email {
+#comment-form p.comment-form-email input#email {
 	width: 390px;
 	height: 20px;
 }
 
-#commentForm p.comment-form-comment textarea#comment {
+#comment-form p.comment-form-comment textarea#comment {
 	width: 645px;
 	height: 150px;
 }
 
-#commentForm .commentsArea .comment-respond p.form-submit {
+#comment-form .comments-area .comment-respond p.form-submit {
 	text-align: right;
 }
 
-#commentForm .commentsArea .comment-respond p.form-submit input#submit {
+#comment-form .comments-area .comment-respond p.form-submit input#submit {
 	width: 146px;
 	height: 40px;
 	border-style: none;
@@ -653,7 +653,7 @@ article footer.entry-footer #update ul li img {
 	line-height: 40px;
 }
 
-#commentForm .commentsArea .comment-respond p.form-submit input#submit:hover {
+#comment-form .comments-area .comment-respond p.form-submit input#submit:hover {
 	background-color: #868484;
 	cursor: pointer;
 }
@@ -664,49 +664,49 @@ aside a.izmaker img,
 aside a.kokoro img,
 aside a.sinagawa img,
 aside a.raitank img,
-aside #adsense,
+aside #google-adsense,
 aside #facebook {
 	margin-bottom: 20px;
 }
 
-aside .adwrap a img {
+aside .ads-wrapper a img {
 	margin-bottom: 10px;
 }
 
-aside .adwrap a:nth-child(2n+1) img {
+aside .ads-wrapper a:nth-child(2n+1) img {
 	margin-right: 20px;
 }
 
-/* PopularPosts */
-aside #PopularPosts {
+/* popular-posts */
+aside #popular-posts {
 	margin-bottom: 24px;
 	padding: 10px 16px;
 	border: 1px solid #d1d1d1;
 }
 
-aside #PopularPosts h3 {
+aside #popular-posts h3 {
 	margin-bottom: 14px;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-aside #PopularPosts img {
+aside #popular-posts img {
 	margin-right: 4px;
 	vertical-align: -8px;
 }
 
-aside #PopularPosts ol {
+aside #popular-posts ol {
 	margin: 0;
     counter-reset: li;
 }
 
-aside #PopularPosts li {
+aside #popular-posts li {
 	position: relative;
 	margin-bottom: 20px;
 	font-size: 12px;
 }
 
-aside #PopularPosts ol li:before {
+aside #popular-posts ol li:before {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -721,18 +721,18 @@ aside #PopularPosts ol li:before {
 	counter-increment: li;
 }
 
-aside #PopularPosts li img {
+aside #popular-posts li img {
 	float: left;
 	width: 80px;
 	margin-right: 10px;
 }
 
-aside #PopularPosts .description {
+aside #popular-posts .description {
 	float: right;
 	width: 170px;
 }
 
-aside #PopularPosts .description .rankCategory a {
+aside #popular-posts .description .rankCategory a {
 	display: block;
 	width: 85px;
 	margin-bottom: 10px;
@@ -745,27 +745,27 @@ aside #PopularPosts .description .rankCategory a {
 }
 
 /* todayブログ */
-aside #PopularPosts .description .rankCategory a#blog,
-aside #PopularPosts .description .rankCategory a#news,
-aside #PopularPosts .description .rankCategory a#technique,
-aside #PopularPosts .description .rankCategory a#interesting,
-aside #PopularPosts .description .rankCategory a#life {
+aside #popular-posts .description .rankCategory a#blog,
+aside #popular-posts .description .rankCategory a#news,
+aside #popular-posts .description .rankCategory a#technique,
+aside #popular-posts .description .rankCategory a#interesting,
+aside #popular-posts .description .rankCategory a#life {
 	background-color: #dd495a;
 }
 
 /* izmaker */
-aside #PopularPosts .description .rankCategory a#izmaker,
-aside #PopularPosts .description .rankCategory a#info,
-aside #PopularPosts .description .rankCategory a#campaign,
-aside #PopularPosts .description .rankCategory a#pickup,
-aside #PopularPosts .description .rankCategory a#useful,
-aside #PopularPosts .description .rankCategory a#magazine {
+aside #popular-posts .description .rankCategory a#izmaker,
+aside #popular-posts .description .rankCategory a#info,
+aside #popular-posts .description .rankCategory a#campaign,
+aside #popular-posts .description .rankCategory a#pickup,
+aside #popular-posts .description .rankCategory a#useful,
+aside #popular-posts .description .rankCategory a#magazine {
 	background-color: #22b6a3;
 }
 
-/* snsButtom styles
+/* footer-area styles
 ======================================== */
-#snsButtom {
+#footer-area {
 	height: 200px;
 	margin-bottom: 20px;
 	background-image: url(../images/bg_izmaker.png),url(../images/bg_white.gif);
@@ -774,31 +774,31 @@ aside #PopularPosts .description .rankCategory a#magazine {
 	background-color: #f7f7f7;
 }
 
-#snsButtom #wrap {
+#footer-area .sns-buttom {
 	width: 1074px;
 	margin: 0 auto;
 	padding: 58px 0;
 }
 
-#snsButtom #wrap ul li {
+#footer-area .sns-buttom ul li {
 	float: left;
 	width: 348px;
 }
 
-#snsButtom #wrap ul li .facebook,
-#snsButtom #wrap ul li .twitter {
+#footer-area .sns-buttom ul li .facebook,
+#footer-area .sns-buttom ul li .twitter {
 	overflow: hidden;
 	position: relative;
 }
 
-#snsButtom #wrap ul li .facebook #fb-root,
-#snsButtom #wrap ul li .twitter #tw-root {
+#footer-area .sns-buttom ul li .facebook #fb-root,
+#footer-area .sns-buttom ul li .twitter #tw-root {
 	position: absolute;
 	top: 66px;
     left: 124px;
 }
 
-#snsButtom #wrap ul li.center {
+#footer-area .sns-buttom ul li.center {
 	margin: 0 15px;
 }
 

@@ -1,6 +1,6 @@
-	<!-- snsButtom -->
-	<div id="snsButtom">
-		<div id="wrap" class="clearfix">
+	<!-- footer-area -->
+	<div id="footer-area">
+		<div class="sns-buttom clearfix">
 			<ul>
 				<li>
 					<div class="facebook">
@@ -30,7 +30,7 @@
 			</ul>
 		</div>
 	</div>
-	<!-- /snsButtom -->
+	<!-- /footer-area -->
 			
 	<footer id="footer" class="clearfix"  role="contentinfo">
 		<nav class="global clearfix" role="navigation"><?php wp_nav_menu( array ( 'theme_location' => 'footer-nav' ) ); ?></nav>
@@ -38,7 +38,7 @@
 	</footer>
 	<!-- /footer -->
 </div>	
-<!-- /wrapper -->
+<!-- /page -->
 
 	<!-- imageMap -->
 	<map name="fbmap" id="fbmap">

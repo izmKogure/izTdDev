@@ -1,6 +1,15 @@
 <?php get_header(); ?>
-<!-- container -->
-<div id="container" class="clearfix">
+<script>
+(function($){
+	$(function() {
+		return $('aside').stick_in_parent({
+			parent: '#content'
+		});
+	});
+})(jQuery);
+</script>
+<!-- content -->
+<div id="content" class="clearfix">
 	<!-- main -->
 	<div id="main" role="main">
 		<div id="breadcrumb">
@@ -13,8 +22,8 @@
 			<header class="entry-header">
 				<div class="category <?php $cat = get_the_category(); $cat = $cat[0];{ echo $cat->category_nicename; } ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/icon_topics.png" alt="icon_topics" width="16" height="20"><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?></div>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<div class="date"><?php echo get_the_date('Y年n月d日'); ?> <?php if (function_exists('wpp_get_views')) { echo wpp_get_views( get_the_ID() ); } ?>views</div>
-				<div class="tag"><?php the_tags('','',''); ?></div>
+				<div class="entry-date"><?php echo get_the_date('Y年n月d日'); ?> <?php if (function_exists('wpp_get_views')) { echo wpp_get_views( get_the_ID() ); } ?>views</div>
+				<div class="entry-tags"><?php the_tags('','',''); ?></div>
 			</header>
 			<div class="entry-content">
 			<?php the_content(); ?>
@@ -23,7 +32,7 @@
 			<?php endif; ?>
 			
 			<footer class="entry-footer">
-				<div id="snsBtn" class="clearfix">
+				<div id="sns-btn" class="clearfix">
 					<div class="ninja_onebutton">
 					<script type="text/javascript">
 					//<![CDATA[
@@ -64,7 +73,7 @@
 				</div>
 				<!-- /staff -->
 					
-				<!-- pager -->
+				<!-- navigation -->
 				<div id="navigation" class="clearfix">
 					<?php if( get_previous_post() ): ?>
 					<div class="alignLeft"><?php previous_post_link('%link','%title',FALSE); ?></div>
@@ -72,14 +81,14 @@
 					<div class="alignRight"><?php next_post_link('%link','%title',FALSE); ?></div>
 					<?php endif; ?>
 				</div>
-				<!-- /pager -->
+				<!-- /navigation -->
 					
-				<!-- relatedArticle -->
-				<div id="relatedArticle">
+				<!-- related-article -->
+				<div id="related-article">
 					<h3><img src="<?php echo get_template_directory_uri(); ?>/images/icon_related.gif" alt="icon_related" width="16" height="20">関連記事</h3>
 					<?php wp_related_posts()?>
 				</div>
-				<!-- /relatedArticle -->
+				<!-- /related-article -->
 				
 				<!-- update -->
 				<div id="update">
@@ -102,11 +111,11 @@
 				</div>
 				<!-- /update -->
 					
-				<!-- commentForm -->
-				<div id="commentForm">
+				<!-- comment-form -->
+				<div id="comment-form">
 				<?php comments_template(); ?>
 				</div>
-				<!-- /commentForm -->
+				<!-- /comment-form -->
 			</footer>
 		</article>
 		<!-- /article -->
@@ -140,7 +149,7 @@
 	<?php get_sidebar(); ?>
 
 </div>
-<!-- /container -->
+<!-- /content -->
 
 <!-- footer -->
 <?php get_footer(); ?>

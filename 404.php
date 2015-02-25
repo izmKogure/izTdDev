@@ -1,8 +1,8 @@
 ﻿<?php get_header(); ?>
-	<!-- container start-->
-	<div id="container" class="clearfix">
-		<!-- contents start-->
-		<div id="contents">
+	<!-- content-->
+	<div id="content" class="clearfix">
+		<!-- main -->
+		<div id="main" role="main">
 			<div id="breadcrumb">
 			<?php echo get_breadcrumb_list(); ?>
 			</div>
@@ -11,13 +11,13 @@
 			<p>現在表示する記事がありません。</p>
 			<p><a href="<?php echo home_url(); ?>">トップページへ戻る</a></p> 
 		</div>
-		<!-- contents end-->
+		<!-- /main -->
 		
-		<!-- sidebar start-->
+		<!-- sidebar -->
 		<?php get_sidebar(); ?>
 		
 	</div>
-	<!-- /container -->
+	<!-- /content -->
 			
-	<!-- footer start-->
+	<!-- footer -->
 	<?php get_footer(); ?>

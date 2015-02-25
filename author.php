@@ -1,12 +1,12 @@
 <?php get_header(); ?>
-<!-- container -->
-<div id="container" class="clearfix">
+<!-- content -->
+<div id="content" class="clearfix">
 	<!-- main -->
 	<div id="main" role="main">
 		<div id="breadcrumb">
 		<?php echo get_breadcrumb_list(); ?>
 		</div>
-		<h2><img src="<?php echo get_template_directory_uri(); ?>/images/icon_topics.png" alt="アイコン" width="16" height="20"><?php echo get_the_author_meta( 'display_name', get_query_var( 'author' ) ); ?>が書いた記事一覧</h2>
+		<h2><img src="<?php echo get_template_directory_uri(); ?>/images/icon_topics.png" alt="icon_topics" width="16" height="20"><?php echo get_the_author_meta( 'display_name', get_query_var( 'author' ) ); ?>が書いた記事一覧</h2>
 		<?php if(have_posts()): ?>
 		<?php while(have_posts()):the_post(); ?>
 		<dl class="<?php $cat = get_the_category(); $cat = $cat[0];{ echo $cat->category_nicename; } ?>">
@@ -31,7 +31,7 @@
 	<?php get_sidebar(); ?>
 	
 </div>
-<!-- /container -->
+<!-- /content -->
 
 <!-- footer -->
 <?php get_footer(); ?>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<!-- container -->
-<div id="container" class="clearfix">
+<!-- content -->
+<div id="content" class="clearfix">
 	<!-- main -->
 	<div id="main" role="main">
 		<div id="breadcrumb">
@@ -31,7 +31,7 @@
 	<?php get_sidebar(); ?>
 	
 </div>
-<!-- /container -->
+<!-- /content -->
 
 <!-- footer -->
 <?php get_footer(); ?>

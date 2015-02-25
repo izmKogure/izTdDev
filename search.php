@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-<!-- container -->
-<div id="container" class="clearfix">
-	<!-- contents -->
+<!-- content -->
+<div id="content" class="clearfix">
+	<!-- main -->
 	<div id="main" role="main">
 		<div id="breadcrumb">
 		<?php echo get_breadcrumb_list(); ?>
@@ -28,13 +28,13 @@
 		</div>
 		<!-- /pager -->
 	</div>
-	<!-- /contents -->
+	<!-- /main -->
 	
 	<!-- sidebar -->
 	<?php get_sidebar(); ?>
 	
 </div>
-<!-- /container -->
+<!-- /content -->
 
 <!-- footer -->
 <?php get_footer(); ?>
