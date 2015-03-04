@@ -215,7 +215,7 @@ nav form fieldset input {
 ======================================== */
 article {
 	width: 745px;
-	margin-bottom: 42px;
+	margin-bottom: 40px;
 }
 
 article header.entry-header .category {
@@ -330,7 +330,7 @@ article footer.entry-footer {
 }
 
 article footer.entry-footer #social {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 
 article footer.entry-footer #social ul li {
@@ -340,6 +340,10 @@ article footer.entry-footer #social ul li {
 
 article footer.entry-footer #social {
 	margin-bottom: 50px;
+}
+
+article footer.entry-footer .secondary-adsense {
+	margin-bottom: 40px;
 }
 
 /* staff */
@@ -469,7 +473,7 @@ article footer.entry-footer #navigation .align-right:hover {
 
 /* relatedArticle */
 article footer.entry-footer #related-article {
-	margin-bottom: 42px;
+	margin-bottom: 40px;
 }
 
 article footer.entry-footer #related-article h3 {
@@ -496,7 +500,7 @@ article footer.entry-footer #related-article li a {
 
 /* update */
 article footer.entry-footer #update {
-	margin-bottom: 42px;
+	margin-bottom: 40px;
 }
 
 article footer.entry-footer #update h3 {
