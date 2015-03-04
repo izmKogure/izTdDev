@@ -6,7 +6,7 @@ if(post_password_required()){
 ?>
 
 <h3 class="comments-title">コメント&nbsp;(<?php echo get_comments_number(); ?>件)</h4>
-<div id="comments" class="comments-area">
+<div class="comments-inner">
 	<?php
 	$commenter = wp_get_current_commenter();
 	$req = get_option( 'require_name_email' );
@@ -25,8 +25,7 @@ if(post_password_required()){
 			'label_submit'  => 'コメント送信',
 	);
 	comment_form($comments_args);
-	?>
-	<!-- /comments -->	
+	?><!-- #content -->	
 	
 	<?php if(have_comments()): ?>
 		<ol class="commetns-list">
@@ -43,9 +42,8 @@ if(post_password_required()){
 		<nav class="comments-navigation" role="navigation">
 			<div class="nav-previous"><?php previous_comments_link('&laquo;古いコメントへ'); ?></div>
 			<div class="nav-next"><?php next_comments_link('新しいコメントへ&raquo;'); ?></div>
-		</nav>
+		</nav><!-- .comment navigation -->	
 		<?php endif; ?>
-		<!-- /comment navigation -->	
 	<?php endif; ?>
 </div>
 

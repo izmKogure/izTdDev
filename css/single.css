@@ -329,16 +329,16 @@ article footer.entry-footer {
 	margin-bottom: 0;
 }
 
-article footer.entry-footer #sns-btn {
+article footer.entry-footer #social {
 	margin-bottom: 50px;
 }
 
-article footer.entry-footer #sns-btn ul li {
+article footer.entry-footer #social ul li {
 	float: left;
 	margin-right: 10px;
 }
 
-article footer.entry-footer #adsense {
+article footer.entry-footer #social {
 	margin-bottom: 50px;
 }
 
@@ -396,9 +396,16 @@ article footer.entry-footer #staff dl dd.worker {
 }
 
 article footer.entry-footer #staff dl dd.worker span {
+	line-height: 1em;
+}
+
+article footer.entry-footer #staff dl dd.worker span a:link,
+article footer.entry-footer #staff dl dd.worker span a:visited,
+article footer.entry-footer #staff dl dd.worker span a:active, 
+article footer.entry-footer #staff dl dd.worker span a:hover {
+	color: #ffffff;
 	font-size: 20px;
 	font-weight: bold;
-	line-height: 1em;
 }
 
 article footer.entry-footer #staff dl dd.description {
@@ -414,7 +421,7 @@ article footer.entry-footer #navigation {
 	margin-bottom: 40px;
 }
 
-article footer.entry-footer #navigation .alignLeft {
+article footer.entry-footer #navigation .align-left {
 	float: left;
 	width: 290px;
 	height: 60px;
@@ -425,19 +432,19 @@ article footer.entry-footer #navigation .alignLeft {
 	background-position: 3% 50%;
 }
 
-article footer.entry-footer #navigation .alignLeft a {
+article footer.entry-footer #navigation .align-left a {
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.8em;
 }
 
-article footer.entry-footer #navigation .alignLeft:hover {
+article footer.entry-footer #navigation .align-left:hover {
 	background-color: #75ccdc;
 	background-image: url(../images/left_arrow_hover.gif);
 }
 
-article footer.entry-footer #navigation .alignRight {
+article footer.entry-footer #navigation .align-right {
 	float: right;
 	width: 290px;
 	height: 60px;
@@ -448,14 +455,14 @@ article footer.entry-footer #navigation .alignRight {
 	background-position: 97% 50%;
 }
 
-article footer.entry-footer #navigation .alignRight a {
+article footer.entry-footer #navigation .align-right a {
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.8em;
 }
 
-article footer.entry-footer #navigation .alignRight:hover {
+article footer.entry-footer #navigation .align-right:hover {
 	background-color: #75ccdc;
 	background-image: url(../images/right_arrow_hover.gif);
 }
@@ -531,13 +538,13 @@ article footer.entry-footer #update ul li img {
 	box-shadow: none;
 }
 
-/* comment-form styles
+/* comments styles
 ======================================== */
-#comment-form {
+#comments {
 	border: solid 1px #000000;
 }
 
-#comment-form h3.comments-title {
+#comments h3.comments-title {
 	margin-bottom: 20px;
 	padding: 15px 20px;
 	background-color: #000000;
@@ -546,103 +553,103 @@ article footer.entry-footer #update ul li img {
 	font-weight: bold;
 }
 
-#comment-form .comments-area .commetns-list {
+#comments .comments-inner .commetns-list {
 	padding: 20px;
 }
 
-#comment-form .comments-area ol li article.comment-body {
+#comments .comments-inner ol li article.comment-body {
 	width: 100%;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	border-bottom: dotted 1px #a09898;
 }
 
-#comment-form footer.comment-meta {
+#comments footer.comment-meta {
 	margin-bottom: 0px;
 }
 
-#comment-form article footer .comment-author.vcard {
+#comments article footer .comment-author.vcard {
 	display: inline;
 }
 
-#comment-form footer.comment-meta .comment-author.vcard img {
+#comments footer.comment-meta .comment-author.vcard img {
 	display: none;
 }
 
-#comment-form footer.comment-meta .comment-author.vcard b.fn {
+#comments footer.comment-meta .comment-author.vcard b.fn {
 	color: #00b5d6;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-#comment-form footer.comment-meta .comment-author.vcard span.says {
+#comments footer.comment-meta .comment-author.vcard span.says {
 	display: none;
 }
 
-#comment-form article footer .comment-metadata {
+#comments article footer .comment-metadata {
 	display: inline;
 }
 
-#comment-form footer.comment-meta .comment-metadata a time {
+#comments footer.comment-meta .comment-metadata a time {
 	color: #1c1c1c;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-#comment-form footer.comment-meta .comment-metadata span.edit-link a.comment-edit-link {
+#comments footer.comment-meta .comment-metadata span.edit-link a.comment-edit-link {
 	font-size: 14px;
 }
 
-#comment-form #comments　.comment-content p {
+#comments .comments-inner　.comment-content p {
 	margin-bottom: 1em;
 	font-size: 14px;
 	line-height: 1.6em;
 	word-wrap: break-word;
 }
 
-#comment-form #comments .reply {
+#comments .comments-inner .reply {
 	text-align: right;
 }
 
-#comment-form #comments .reply a.comment-reply-link {
+#comments .comments-inner .reply a.comment-reply-link {
 	font-size: 14px;
 	font-weight: bold;
 }
 
-#comment-form #comments ul.children li {
+#comments .comments-inner ul.children li {
 	margin-left: 1em;
 }
 
-#comment-form .comments-area .comment-respond {
+#comments .comments-inner .comment-respond {
 	padding: 0 20px 20px 20px;
 }
 
-#comment-form p.comment-form-author label {
+#comments p.comment-form-author label {
 	color: #1c1c1c;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-#comment-form p.comment-form-author input#author {
+#comments p.comment-form-author input#author {
 	width: 390px;
 	height: 20px;
 }
 
-#comment-form p.comment-form-email input#email {
+#comments p.comment-form-email input#email {
 	width: 390px;
 	height: 20px;
 }
 
-#comment-form p.comment-form-comment textarea#comment {
+#comments p.comment-form-comment textarea#comment {
 	width: 645px;
 	height: 150px;
 }
 
-#comment-form .comments-area .comment-respond p.form-submit {
+#comments .comments-inner .comment-respond p.form-submit {
 	text-align: right;
 }
 
-#comment-form .comments-area .comment-respond p.form-submit input#submit {
+#comments .comments-inner .comment-respond p.form-submit input#submit {
 	width: 146px;
 	height: 40px;
 	border-style: none;
@@ -653,7 +660,7 @@ article footer.entry-footer #update ul li img {
 	line-height: 40px;
 }
 
-#comment-form .comments-area .comment-respond p.form-submit input#submit:hover {
+#comments .comments-inner .comment-respond p.form-submit input#submit:hover {
 	background-color: #868484;
 	cursor: pointer;
 }
@@ -664,7 +671,7 @@ aside a.izmaker img,
 aside a.kokoro img,
 aside a.sinagawa img,
 aside a.raitank img,
-aside #google-adsense,
+aside #primary-adsense,
 aside #facebook {
 	margin-bottom: 20px;
 }

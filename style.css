@@ -165,7 +165,7 @@ body.tag aside {
 
 /* header styles
 ======================================== */
-header h1.logo {
+header div.logo {
 	width: 1074px;
 	margin: 28px auto 27px auto;
 }
@@ -189,7 +189,7 @@ header nav .nav-wrapper .nav-inner {
 	width: 400px;
 }
 
-header nav .nav-wrapper .nav-inner a.home-buttom {
+header nav .nav-wrapper .nav-inner span.home-buttom {
 	float: left;
 	width: 30px;
 	margin: 8px 40px 8px 10px;
@@ -294,7 +294,7 @@ nav form {
 	text-align: right;
 }
 
-nav form fieldset input#search {
+nav form fieldset input.form-control {
 	width: 180px;
 	height: 26px;
 	margin: 4px 12px 4px 0;
@@ -482,20 +482,20 @@ body.tag #main h2 img {
 	background-color: #ffffff;
 }
 
-#main dl dt .thumb img.new {
+#main dl dt .thumb img.add_new {
 	z-index: 1;
 	position: absolute;
 	top: 0px;
 	left: 0px;
 }
 
-#main dl dd.firstChild {
+#main dl dd.first-child {
 	height: 20px;
 	margin: -128px 0 12px 0;
 	padding-left: 200px;
 }
 
-#main dl dd #category {
+#main dl dd .category {
 	display: inline-block;
 	padding: 5px;
 	background-color: #ffffff;
@@ -506,12 +506,12 @@ body.tag #main h2 img {
 }
 
 /* izmaker */
-#main dl dd #category.izmaker,
-#main dl dd #category.info,
-#main dl dd #category.campaign,
-#main dl dd #category.pickup,
-#main dl dd #category.useful,
-#main dl dd #category.magazine {
+#main dl dd .category.izmaker,
+#main dl dd .category.info,
+#main dl dd .category.campaign,
+#main dl dd .category.pickup,
+#main dl dd .category.useful,
+#main dl dd .category.magazine {
 	color: #22b6a3;
 }
 
@@ -520,10 +520,10 @@ body.tag #main h2 img {
 	padding: 0 20px 0 220px; 
 }
 
-#main dl dd.ttl h3 a:link, 
-#main dl dd.ttl h3 a:visited,
-#main dl dd.ttl h3 a:active, 
-#main dl dd.ttl h3 a:hover {
+#main dl dd.ttl h1 a:link, 
+#main dl dd.ttl h1 a:visited,
+#main dl dd.ttl h1 a:active, 
+#main dl dd.ttl h1 a:hover {
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: bold;
@@ -617,7 +617,7 @@ aside a.izmaker img,
 aside a.kokoro img,
 aside a.sinagawa img,
 aside a.raitank img,
-aside #google-adsense,
+aside #primary-adsense,
 aside #facebook {
 	margin-bottom: 20px;
 }

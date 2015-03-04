@@ -104,3 +104,12 @@ function pagename_class($classes = '') {
   return $classes;
 }
 add_filter('body_class', 'pagename_class');
+
+//Newアイコンを画像で表示する
+function add_new($date,$days){
+	$today = date_i18n('U');
+	$elapsed = date('U',($today - $date)) / 86400;
+	if( $days > $elapsed ){
+		echo '<img class="add_new" src="' . get_template_directory_uri() .'/images/icon_new.png">';
+	}
+}
