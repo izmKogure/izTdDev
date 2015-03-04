@@ -15,7 +15,7 @@
 				<dt>
 					<div class="thumb">
 						<a href="<?php the_permalink(); ?>">
-							<?php add_new(get_the_time('U'),3); ?><?php if ( has_post_thumbnail() ) { the_post_thumbnail() ;} ?>
+							<?php add_new(get_the_time('U'),3); ?><?php the_post_thumbnail('thum-entry'); ?>
 						</a>
 					</div>
 				</dt>
