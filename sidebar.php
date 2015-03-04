@@ -24,8 +24,8 @@
 		            "
 					<li class='clearfix'>
 		            {thumb}
-		            <div class='description'>
-						<div class='rankCategory'>{category}</div>
+		            <div class='content'>
+						<div class='widget-category'>{category}</div>
 		                <a href='{url}'>{text_title}</a>
 		            </div>
 		            </li>
