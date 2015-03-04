@@ -338,15 +338,10 @@ article footer.entry-footer #social ul li {
 	margin-right: 10px;
 }
 
-article footer.entry-footer #social {
-	margin-bottom: 50px;
-}
-
-article footer.entry-footer .secondary-adsense {
+article footer.entry-footer #secondary-adsense {
 	margin-bottom: 40px;
 }
 
-/* staff */
 article footer.entry-footer #staff dl {
 	width: 745px;
 	height: 200px;
