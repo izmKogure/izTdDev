@@ -7,7 +7,8 @@ register_nav_menu( 'footer-nav', 'フッターのメニュー' );
 
 //アイキャッチ画像 
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 200, 140, true );
+add_image_size( 'thum-entry', 200, 140, true );
+add_image_size( 'thum-feature', 164, 115, true );
 
 //投稿一覧にサムネイルの項目を追加
 function add_thumbnail_column( $columns ) {
