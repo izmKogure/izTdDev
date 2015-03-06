@@ -474,6 +474,11 @@ body.tag #main h2 img {
 	float: left;
 	width: 164px;
 	height: 180px;
+	margin-right: 18px;
+}
+
+#feature dl:last-child {
+	margin-right: 0;
 }
 
 #feature dl dt {
