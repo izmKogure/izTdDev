@@ -4,7 +4,7 @@
 	</div>
 	
 	<div id="feature">
-		<h2>特集記事</h2>
+		<h2 class="fea-h">特集記事</h2>
 		<?php global $post; $feature = get_posts( array( 'posts_per_page' => 6, 'orderby' => 'rand', 'tag' => 'feature' ) ); ?>
 								
 			<?php foreach( $feature as $post ) : setup_postdata($post); ?>

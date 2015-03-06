@@ -454,6 +454,71 @@ body.tag #main h2 img {
 
 /* contents styles
 ======================================== */
+#feature {
+	width: 1074px;
+	margin: 0 auto 40px auto;
+}
+
+#feature h2.fea-h {
+	height: 46px;
+	margin-bottom: 18px;
+	background-color: #3c3c3c;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 2.3em;
+	text-align: center;
+} 
+
+#feature dl {
+	width: 164px;
+	height: 180px;
+}
+
+#feature dl dt {
+	width: 164px;
+	height: 115px;
+}
+
+#feature dl dd.first-child {
+	height: 20px;
+	margin-top: -15px;
+}
+
+#feature dl dd .category {
+	display: inline-block;
+	padding: 5px;
+	background-color: #dd495a;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 1em;
+}
+
+/* izmaker */
+#feature dl dd .category.izmaker,
+#feature dl dd .category.info,
+#feature dl dd .category.campaign,
+#feature dl dd .category.pickup,
+#feature dl dd .category.useful,
+#feature dl dd .category.magazine {
+	background-color: #22b6a3;
+}
+
+#feature dl dd.ttl {
+	
+}
+
+#feature dl dd.ttl h1 a:link, 
+#feature dl dd.ttl h1 a:visited,
+#feature dl dd.ttl h1 a:active, 
+#feature dl dd.ttl h1 a:hover {
+	color: #3c3c3c;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 2em;
+}
+
 #main dl {
 	position: relative;
 	width: 745px;
