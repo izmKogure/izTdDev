@@ -5,7 +5,7 @@
 	
 	<div id="feature">
 		<h2 class="fea-h">特集記事</h2>
-		<div class="clearfix">
+		<div class="fea-content clearfix">
 		<?php global $post; $feature = get_posts( array( 'posts_per_page' => 6, 'orderby' => 'rand', 'tag' => 'feature' ) ); ?>
 								
 			<?php foreach( $feature as $post ) : setup_postdata($post); ?>
@@ -17,7 +17,7 @@
 				</dt>
 				<dd class="first-child">
 					<div class="category <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->category_nicename; }; ?>">
-						<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+						<?php echo $cat->cat_name; ?>
 					</div>
 				</dd>
 				<dd class="ttl">
@@ -57,7 +57,7 @@
 				</dt>
 				<dd class="first-child">
 					<div class="category <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->category_nicename; }; ?>">
-						<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+						<?php echo $cat->cat_name; ?>
 					</div>
 				</dd>
 				<dd class="ttl">

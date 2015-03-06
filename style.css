@@ -120,12 +120,6 @@ a,a:hover {
 	transition: 0.7s;
 }
 
-a img:hover {
-	filter: alpha(opacity=75);
-	-moz-opacity:0.75;
-	opacity:0.75;
-}
-
 /* Basic styles
 ======================================== */
 a:link, a:visited, a:hover {
@@ -550,7 +544,6 @@ body.tag #main h2 img {
 
 #main dl dt .thumb {
 	position: relative;
-	background-color: #ffffff;
 }
 
 #main dl dt .thumb img.add_new {

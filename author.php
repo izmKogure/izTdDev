@@ -21,7 +21,7 @@
 				</dt>
 				<dd class="first-child">
 					<div class="category <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->category_nicename; }; ?>">
-						<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+						<?php echo $cat->cat_name; ?>
 					</div>
 				</dd>
 				<dd class="ttl">
