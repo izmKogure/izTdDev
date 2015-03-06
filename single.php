@@ -1,21 +1,4 @@
 <?php get_header(); ?>
-<script>
-(function($){
-	$(function() {
-		return $('aside').stick_in_parent({
-			offset_top:20
-		});
-	});
-})(jQuery);
-</script>
-<script>
-jQuery(function(){
-	setTimeout(function(){
-		jQuery(document.body).trigger('sticky_kit:recalc');
-	},2000);
-});
-</script>
-
 	<div id="content" class="site-content clearfix">
 		<div id="main" class="site-main" role="main">
 			<div id="breadcrumb">

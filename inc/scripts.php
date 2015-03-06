@@ -3,11 +3,13 @@
 if (!is_admin()) {
 	function register_script(){
 		wp_register_script('jquery.sticky-kit.min', get_bloginfo('template_directory').'/js/jquery.sticky-kit.min.js');
+		wp_register_script('sticky-kit-sidebar', get_bloginfo('template_directory').'/js/sticky-kit-sidebar.js');
 	}
 	function add_script() {
 		register_script();
 		if (is_single()) {
 			wp_enqueue_script('jquery.sticky-kit.min');
+			wp_enqueue_script('sticky-kit-sidebar');
 		}
 	}
 	add_action('wp_print_scripts', 'add_script');

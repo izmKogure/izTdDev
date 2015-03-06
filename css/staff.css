@@ -330,12 +330,12 @@ aside #popular-posts li img {
 	margin-right: 10px;
 }
 
-aside #popular-posts .content {
+aside #popular-posts .pop-content {
 	float: right;
 	width: 170px;
 }
 
-aside #popular-posts .content .widget-category a {
+aside #popular-posts .pop-content .pop-category a {
 	display: block;
 	width: 85px;
 	margin-bottom: 10px;
@@ -348,21 +348,21 @@ aside #popular-posts .content .widget-category a {
 }
 
 /* todayブログ */
-aside #popular-posts .content .widget-category a#blog,
-aside #popular-posts .content .widget-category a#news,
-aside #popular-posts .content .widget-category a#technique,
-aside #popular-posts .content .widget-category a#interesting,
-aside #popular-posts .content .widget-category a#life {
+aside #popular-posts .pop-content .pop-category a#blog,
+aside #popular-posts .pop-content .pop-category a#news,
+aside #popular-posts .pop-content .pop-category a#technique,
+aside #popular-posts .pop-content .pop-category a#interesting,
+aside #popular-posts .pop-content .pop-category a#life {
 	background-color: #dd495a;
 }
 
 /* izmaker */
-aside #popular-posts .content .widget-category a#izmaker,
-aside #popular-posts .content .widget-category a#info,
-aside #popular-posts .content .widget-category a#campaign,
-aside #popular-posts .content .widget-category a#pickup,
-aside #popular-posts .content .widget-category a#useful,
-aside #popular-posts .content .widget-category a#magazine {
+aside #popular-posts .pop-content .pop-category a#izmaker,
+aside #popular-posts .pop-content .pop-category a#info,
+aside #popular-posts .pop-content .pop-category a#campaign,
+aside #popular-posts .pop-content .pop-category a#pickup,
+aside #popular-posts .pop-content .pop-category a#useful,
+aside #popular-posts .pop-content .pop-category a#magazine {
 	background-color: #22b6a3;
 }
 

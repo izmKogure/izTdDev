@@ -24,8 +24,8 @@
 		            "
 					<li class='clearfix'>
 		            {thumb}
-		            <div class='content'>
-						<div class='widget-category'>{category}</div>
+		            <div class='pop-content'>
+						<div class='pop-category'>{category}</div>
 		                <a href='{url}'>{text_title}</a>
 		            </div>
 		            </li>
