@@ -5,40 +5,40 @@
 	
 	<div id="feature">
 		<h2 class="fea-h">特集記事</h2>
+		<div class="clearfix">
 		<?php global $post; $feature = get_posts( array( 'posts_per_page' => 6, 'orderby' => 'rand', 'tag' => 'feature' ) ); ?>
 								
 			<?php foreach( $feature as $post ) : setup_postdata($post); ?>
-			<div class="clearfix">
-				<dl>
-					<dt>
-						<div class="thumb">
-							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thum-feature'); ?></a>
-						</div>
-					</dt>
-					<dd class="first-child">
-						<div class="category <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->category_nicename; }; ?>">
-							<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
-						</div>
-					</dd>
-					<dd class="ttl">
-						<h1>
-							<a href="<?php the_permalink(); ?>">
-								<?php
-									if ( mb_strlen ( $post -> post_title ) > 50 ) {
-									        $title = mb_substr( $post -> post_title, 0, 50 );
-									        echo $title . '...';
-									    } else {
-									    echo $post -> post_title;
-									    }
-								?> 
-							</a>
-						</h1>	
-					</dd>
-				</dl>
-			</div>						
+			<dl>
+				<dt>
+					<div class="thumb">
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thum-feature'); ?></a>
+					</div>
+				</dt>
+				<dd class="first-child">
+					<div class="category <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->category_nicename; }; ?>">
+						<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+					</div>
+				</dd>
+				<dd class="ttl">
+					<h1>
+						<a href="<?php the_permalink(); ?>">
+							<?php
+								if ( mb_strlen ( $post -> post_title ) > 50 ) {
+								        $title = mb_substr( $post -> post_title, 0, 50 );
+								        echo $title . '...';
+								    } else {
+								    echo $post -> post_title;
+								    }
+							?> 
+						</a>
+					</h1>	
+				</dd>
+			</dl>						
 			<?php endforeach; ?>
 			
-		<?php wp_reset_postdata(); ?>		
+		<?php wp_reset_postdata(); ?>
+		</div>		
 	</div>
 	
 	<div id="content" class="site-content clearfix">
