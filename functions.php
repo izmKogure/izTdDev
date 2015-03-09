@@ -6,3 +6,5 @@ require get_template_directory() . '/inc/scripts.php';     // CSSやJavascript�
 require get_template_directory() . '/inc/ads.php';         // 広告関連の関数
 require get_template_directory() . '/inc/custom.php';      // その他カスタマイズの関数
 require get_template_directory() . '/inc/ogp.php';         // OGP設定の関数
+require get_template_directory() . '/inc/social.php';      // ソーシャルの関数
+

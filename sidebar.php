@@ -10,9 +10,7 @@
 				$args = array(
 					'limit' => 10,
 		            'range' => 'weekly',
-		            'post_type' => post,
-		            'pid' => "21,22,23,24,25,26", 
-		            'title_length' => 20, 
+		            'post_type' => post,		        		        
 		            'thumbnail_width' => 80,
 		            'thumbnail_height' => 80, 
 		            'stats_comments' => 0,
@@ -36,15 +34,8 @@
 		<?php endif; ?>
 	</div><!-- #popular-posts -->
 		
-	<div id="facebook">
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=758942267458537&version=v2.0";
-			fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
-		<div class="fb-like-box" data-href="https://www.facebook.com/izmaker" data-width="300" data-height="642" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="true"></div>
+	<div id="widget-facebook">
+		<?php echo do_shortcode('[wi_facebook]'); ?>
 	</div>
 		
 	<a class="sinagawa" href="http://www.umotiongraphics.com/" target="_blank">

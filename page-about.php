@@ -25,15 +25,7 @@
 				</section>
 				
 				<div id="fb-like-box">
-				<div id="fb-root"></div>
-				<script>(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
-				  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=232196246918155";
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
-				<div class="fb-like-box" data-href="https://www.facebook.com/izmaker" data-width="745" data-height="290" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
+					<?php echo do_shortcode('[li_facebook]'); ?>	
 				</div>
 			
 			</div><!-- #about-wrapper -->

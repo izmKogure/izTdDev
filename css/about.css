@@ -320,7 +320,7 @@ aside a.kokoro img,
 aside a.sinagawa img,
 aside a.raitank img,
 aside #primary-adsense,
-aside #facebook {
+aside #widget-facebook {
 	margin-bottom: 20px;
 }
 
@@ -429,32 +429,33 @@ aside #popular-posts .pop-content .pop-category a#magazine {
 	background-color: #f7f7f7;
 }
 
-#footer-area .sns-buttom {
+#footer-area .social-info {
 	width: 1074px;
 	margin: 0 auto;
 	padding: 58px 0;
 }
 
-#footer-area .sns-buttom ul li {
+#footer-area .social-info ul li {
 	float: left;
 	width: 348px;
+	margin-right: 15px;
 }
 
-#footer-area .sns-buttom ul li .facebook,
-#footer-area .sns-buttom ul li .twitter {
+#footer-area .social-info ul li:last-child {
+	margin-right: 0;
+}
+
+#footer-area .social-info ul li .fo-facebook,
+#footer-area .social-info ul li .fo-twitter {
 	overflow: hidden;
 	position: relative;
 }
 
-#footer-area .sns-buttom ul li .facebook #fb-root,
-#footer-area .sns-buttom ul li .twitter #tw-root {
+#footer-area .social-info ul li .fo-facebook .fb-content,
+#footer-area .social-info ul li .fo-twitter .tw-content {
 	position: absolute;
 	top: 66px;
     left: 124px;
-}
-
-#footer-area .sns-buttom ul li.center {
-	margin: 0 15px;
 }
 
 /* footer styles
