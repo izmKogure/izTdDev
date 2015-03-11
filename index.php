@@ -21,7 +21,7 @@
 					</div>
 				</dd>
 				<dd class="ttl">
-					<h1><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words( get_the_title(), 35, '...' ); ?></a></h1>	
+					<h1><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words( get_the_title(), 34, '...' ); ?></a></h1>	
 				</dd>
 			</dl>						
 			<?php endforeach; ?>
