@@ -113,3 +113,20 @@ function add_new($date,$days){
 		echo '<img class="add_new" src="' . get_template_directory_uri() .'/images/icon_new.png">';
 	}
 }
+
+//HTMLソースで入力した際の＜P＞や＜br＞タグを残す
+add_action(‘init’, function() {
+remove_filter(‘the_title’, ‘wptexturize’);
+remove_filter(‘the_content’, ‘wptexturize’);
+remove_filter(‘the_excerpt’, ‘wptexturize’);
+remove_filter(‘the_title’, ‘wpautop’);
+remove_filter(‘the_content’, ‘wpautop’);
+remove_filter(‘the_excerpt’, ‘wpautop’);
+remove_filter(‘the_editor_content’, ‘wp_richedit_pre’);
+});
+
+add_filter(‘tiny_mce_before_init’, function($init) {
+$init['wpautop'] = false;
+$init['apply_source_formatting'] = ture;
+return $init;
+});

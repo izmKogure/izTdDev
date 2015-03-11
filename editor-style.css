@@ -2,49 +2,79 @@
 /* Visual rich editor styles
 ======================================== */
 h1 {
+	margin-bottom: 20px;
 	padding: 24px 20px;
 	background-color: #efefef;
+	color: #3c3c3c;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.3em;
 }
 
 h2 {
-	padding: 24px 20px;
-	background-color: #efefef;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	background: url(images/bg_h2.gif) repeat-x bottom;
+	color: #3c3c3c;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.3em;
 }
 
 h3 {
-	padding: 24px 20px;
-	background-color: #efefef;
-}
-
-h4 {
-	padding: 24px 20px;
-	background-color: #efefef;
-}
-
-h5 {
-	padding: 24px 20px;
-	background-color: #efefef;
-}
-
-h6 {
-	padding: 24px 20px;
-	background-color: #efefef;
+	padding-left: 20px;
+	background: url(images/bg_h3.gif) no-repeat left;
+	color: #3c3c3c;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.6em;
 }
 
 p {
-	margin-bottom: 1em;
+	color: #3c3c3c;
 	font-size: 16px;
-	line-height: 1.7em;
+	line-height: 1.5em;
+}
+
+strong,
+b {
+	color: #3c3c3c;
+	font-weight: bold;
+}
+
+em,
+address {
+	color: #3c3c3c;
+	font-style: italic;
+}
+
+ul {
+	list-style-image: url(images/list_icon.gif);
+	margin-left: 1.4em;
+}
+
+ul li {
+	margin-bottom: 20px;
+}
+
+ol {
+	list-style-type: decimal;
+	margin-left: 1em;
+}
+
+ol li {
+	margin-bottom: 20px;
 }
 
 blockquote {
-	-webkit-margin-before: 0em;
-	-webkit-margin-after: 0em;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
+	margin-bottom: 50px; 
+	border: 1px solid #ddd9da;
+	background: url(images/bg_quotation.gif) no-repeat 20px 20px;
+	background-color: #f9f9f9;
 }
 
 blockquote p {
-	color: #999999;
+	padding: 20px 20px 20px 90px;
+	color: #727272;
 	font-style: italic;
 }
