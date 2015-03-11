@@ -505,18 +505,14 @@ body.tag #main h2 img {
 	background-color: #22b6a3;
 }
 
-#feature dl dd.ttl {
-	
-}
-
 #feature dl dd.ttl h1 a:link, 
 #feature dl dd.ttl h1 a:visited,
 #feature dl dd.ttl h1 a:active, 
 #feature dl dd.ttl h1 a:hover {
 	color: #3c3c3c;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: bold;
-	line-height: 2em;
+	line-height: 1.4em;
 }
 
 #main dl {
