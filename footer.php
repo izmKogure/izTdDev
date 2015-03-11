@@ -15,7 +15,7 @@
 				</div>
 			</li>
 		</ul>
-	</div><!-- .sns-buttom -->
+	</div><!-- .social-info -->
 </div><!-- #footer-area -->
 			
 <footer id="footer" role="contentinfo">
