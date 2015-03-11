@@ -513,7 +513,7 @@ body.tag #main h2 img {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.4em;
-	white-space: nowrap;
+	word-wrap: break-word;
 }
 
 #main dl {
