@@ -21,18 +21,7 @@
 					</div>
 				</dd>
 				<dd class="ttl">
-					<h1>
-						<a href="<?php the_permalink(); ?>">
-							<?php
-								if ( mb_strlen ( $post -> post_title ) > 40 ) {
-								        $title = mb_substr( $post -> post_title, 0, 40 );
-								        echo $title . '...';
-								    } else {
-								    echo $post -> post_title;
-								    }
-							?> 
-						</a>
-					</h1>	
+					<h1><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words( get_the_title(), 35, '...' ); ?></a></h1>	
 				</dd>
 			</dl>						
 			<?php endforeach; ?>
@@ -61,18 +50,7 @@
 					</div>
 				</dd>
 				<dd class="ttl">
-					<h1>
-						<a href="<?php the_permalink(); ?>">
-							<?php
-								if ( mb_strlen ( $post -> post_title ) > 50 ) {
-								        $title = mb_substr( $post -> post_title, 0, 50 );
-								        echo $title . '...';
-								    } else {
-								    echo $post -> post_title;
-								    }
-							?> 
-						</a>
-					</h1>	
+					<h1><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words( get_the_title(), 50, '...' ); ?></a></h1>	
 				</dd>
 				<dd class="date">
 					<?php echo get_the_date('Y年n月d日'); ?> ｜ <?php if ( function_exists('wpp_get_views') ) { echo wpp_get_views( get_the_ID() ); } ?>views
