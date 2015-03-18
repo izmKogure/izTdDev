@@ -1,8 +1,6 @@
 ﻿<?php get_header(); ?>
-	<!-- content-->
-	<div id="content" class="clearfix">
-		<!-- main -->
-		<div id="main" role="main">
+	<div id="content" class="site-content clearfix">
+		<main id="main" class="site-main" role="main">
 			<div id="breadcrumb">
 				<?php echo get_breadcrumb_list(); ?>
 			</div>
@@ -11,14 +9,7 @@
 			<p>このページのURL：http://<?php echo esc_html($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']); ?></p>
 			<p>現在表示する記事がありません。</p>
 			<p><a href="<?php echo home_url(); ?>">トップページへ戻る</a></p> 
-		</div>
-		<!-- /main -->
-		
-		<!-- sidebar -->
-		<?php get_sidebar(); ?>
-		
-	</div>
-	<!-- /content -->
-			
-	<!-- footer -->
+		</div><!-- #main -->		
+<?php get_sidebar(); ?>		
+	</div><!-- #content -->
 	<?php get_footer(); ?>
