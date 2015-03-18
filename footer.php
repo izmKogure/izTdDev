@@ -20,8 +20,8 @@
 			
 <footer id="footer" role="contentinfo">
 	<div class="site-info container clearfix">
-		<nav class="global" role="navigation"><?php wp_nav_menu( array ( 'theme_location' => 'footer-nav', 'container_class' => 'menu-footer-nav-container clearfix' ) ); ?></nav>
-		<p><small>&copy;2014 izmaker Today</small></p>
+		<nav class="navbar-footer" role="navigation"><?php wp_nav_menu( array ( 'theme_location' => 'footer-nav', 'container_class' => 'menu-footer-nav-container clearfix' ) ); ?></nav>
+		<p class="copyright"><small>&copy;2014 izmaker Today</small></p>
 	</div>
 </footer><!-- #footer -->
 </div><!-- #page -->

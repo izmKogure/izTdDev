@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div id="slide">
+	<div id="slides">
 		<?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
 	</div>
 	
@@ -31,7 +31,7 @@
 	</div>
 	
 	<div id="content" class="site-content clearfix">
-		<div id="main" class="site-main" role="main">
+		<main id="main" class="site-main" role="main">
 			<?php if ( have_posts() ) : ?>
 				
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -67,11 +67,11 @@
 			
 			<?php endif; ?>
 			
-			<div id="navigation">
+			<div id="page-navi">
 				<?php wp_pagenavi(); ?>
-			</div><!-- #navigation -->
+			</div><!-- #page navi -->
 			
-		</div><!-- #main -->
+		</main><!-- #main -->
 <?php get_sidebar(); ?>
 	</div><!-- #content -->
 <?php get_footer(); ?>

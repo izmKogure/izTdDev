@@ -33,7 +33,7 @@
 				<?php endif; ?>
 				
 				<footer class="entry-footer">
-					<div id="social" class="clearfix">
+					<div id="social">
 						<?php echo do_shortcode('[bu_ninja]'); ?>	
 					</div>
 						
@@ -41,7 +41,7 @@
 						<?php echo do_shortcode('[sec_ad]'); ?>
 					</div><!-- #secondary-adsense -->
 					
-					<div id="staff">
+					<div id="staff-area">
 						<dl>
 							<dt><div class="avatar"><?php echo get_avatar(get_the_author_id(), 200); ?></div></dt>
 							<dd class="first-child"><h3>この記事を書いた人</h3></dd>
@@ -51,13 +51,15 @@
 						</dl>	
 					</div><!-- #staff -->
 						
-					<div id="navigation" class="clearfix">
+					<nav class="navigation post-navigation" role="navigation">
+						<div class="nav-links clearfix">
 						<?php if( get_previous_post() ): ?>
-							<div class="align-left"><?php previous_post_link('%link','%title',false); ?></div>
+							<div class="nav-previous"><?php previous_post_link('%link','%title',false); ?></div>
 						<?php endif; if( get_next_post() ): ?>
-							<div class="align-right"><?php next_post_link('%link','%title',false); ?></div>
+							<div class="nav-next"><?php next_post_link('%link','%title',false); ?></div>
 						<?php endif; ?>
-					</div><!-- #navigation -->
+						</div>
+					</nav><!-- #navigation -->
 						
 					<div id="related-article">
 						<h3><img src="<?php echo get_template_directory_uri(); ?>/images/icon_related.gif" alt="icon_related" width="16" height="20">関連記事</h3>

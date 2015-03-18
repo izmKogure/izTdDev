@@ -1,6 +1,5 @@
-﻿@charset "utf-8";
-/* Basic styles
-======================================== */
+﻿/* Basic styles
+----------------------------------------------- */
 a:link, a:visited, a:hover {
 	color: #00b5d6;
 	text-decoration: none;	
@@ -12,11 +11,17 @@ a:active {
 }
 
 /* Layout styles
-======================================== */
+----------------------------------------------- */
 #page {
 	width: 100%;
 	margin: 0 auto;
 	background-color: #ffffff;
+}
+
+#content {
+	width: 1074px;
+	margin: 0 auto;
+	margin-bottom: 118px;
 }
 
 #main {
@@ -29,21 +34,14 @@ aside {
 	width: 300px;
 }
 
-body.author aside,
-body.category aside,
-body.search aside,
-body.tag aside {
-	padding-top: 22px;
-}
-
-/* header styles
-======================================== */
-header h1.logo {
+/* Header styles
+----------------------------------------------- */
+header div.logo {
 	width: 1074px;
 	margin: 28px auto 27px auto;
 }
 
-header nav {
+.navbar-header {
 	height: 40px;
 	margin-bottom: 20px;
 	-moz-box-shadow: rgba(6,6,6,0.40) 0px 0px 5px;
@@ -52,37 +50,37 @@ header nav {
 	background-color: #3c3c3c;
 }
 
-header nav .nav-wrapper {
+.navbar-header .nav-wrapper {
 	width: 1074px;
 	margin: 0 auto;
 }
 
-header nav .nav-wrapper .nav-inner {
+.navbar-header .nav-inner {
 	float: left;
 	width: 400px;
 }
 
-header nav .nav-wrapper .nav-inner a.home-buttom {
+.navbar-header span.home-buttom {
 	float: left;
 	width: 30px;
 	margin: 8px 40px 8px 10px;
 }
 
-header nav .nav-wrapper .nav-inner .menu-header-nav-container {
+.navbar-header .menu-header-nav-container {
 	float: left;
 	width: 320px;
 }
 
-header nav ul {
+.navbar-header ul {
 	list-style: none;
 }
 
-header nav ul.menu {
+.navbar-header ul.menu {
 	width: 320px;
 	height: 40px;
 }
 
-header nav ul li {
+.navbar-header ul li {
 	position: relative;
 	float: left;
 	z-index: 2;
@@ -90,20 +88,20 @@ header nav ul li {
 	text-align: center;
 }
 
-header nav ul li.blog {
+.navbar-header ul li.blog {
 	margin-right: 40px;
 	background-image: url(../images/bg_navi.gif);
 	background-repeat: no-repeat;
 	background-position: 90%;
 }
 
-header nav ul li.izmaker {
+.navbar-header ul li.izmaker {
 	background-image: url(../images/bg_navi.gif);
 	background-repeat: no-repeat;
 	background-position: 80%;
 }
 
-header nav ul li a {
+.navbar-header ul li a {
 	display: block;
 	border-top: solid 2px #3c3c3c;
 	border-bottom: solid 2px #dd495a;
@@ -112,19 +110,19 @@ header nav ul li a {
 	line-height: 36px;
 }
 
-header nav ul li.izmaker a {
+.navbar-header ul li.izmaker a {
 	border-bottom: solid 2px #22b6a3;
 }
 
-header nav ul li a:link, 
-header nav ul li a:visited,
-header nav ul li a:hover, 
-header nav ul li a:active {
+.navbar-header ul li a:link, 
+.navbar-header ul li a:visited,
+.navbar-header ul li a:hover, 
+.navbar-header ul li a:active {
 	color: #ffffff;
 }
 
-/* Sub-menu */
-header nav ul ul.sub-menu {
+/* Sub menu */
+.navbar-header ul.sub-menu {
 	display: none;
   	position: absolute;
   	-moz-box-shadow: rgba(6,6,6,0.50) 0px 4px 5px 0px;
@@ -133,26 +131,26 @@ header nav ul ul.sub-menu {
   	background-color: #dd495a;
 }
 
-header nav ul ul.sub-menu li.info,
-header nav ul ul.sub-menu li.campaign, 
-header nav ul ul.sub-menu li.pickup,
-header nav ul ul.sub-menu li.useful,
-header nav ul ul.sub-menu li.magazine {
+.navbar-header ul.sub-menu li.info,
+.navbar-header ul.sub-menu li.campaign, 
+.navbar-header ul.sub-menu li.pickup,
+.navbar-header ul.sub-menu li.useful,
+.navbar-header ul.sub-menu li.magazine {
 	background-color: #22b6a3;
 }
 
-header nav ul ul.sub-menu li a {
+.navbar-header ul.sub-menu li a {
 	padding-left: 10px;
 	border-style: none;
 	font-weight: normal;
 	text-align: left;
 }
 
-header nav ul li:hover ul.sub-menu {
+.navbar-header ul li:hover ul.sub-menu {
     display: block;
 }
 
-header nav ul ul.sub-menu li a:hover {
+.navbar-header ul.sub-menu li a:hover {
 	opacity:0.3;
 	filter: alpha(opacity=30);
 	-ms-filter: "alpha( opacity=30 )";
@@ -160,59 +158,51 @@ header nav ul ul.sub-menu li a:hover {
 	color: #333333;
 }
 
-/* searchBox */
-nav form {
+/* Form search */
+.form-search {
 	float: right;
 	width: 230px;
 	text-align: right;
 }
 
-nav form fieldset input#search {
+.form-search fieldset input.form-control {
 	width: 180px;
 	height: 26px;
 	margin: 4px 12px 4px 0;
 }
 
-nav form fieldset input {
+.form-search fieldset input {
 	vertical-align: middle;
 }
 
-/* container styles
-======================================== */
-#content {
-	width: 1074px;
-	margin: 0 auto;
-	margin-bottom: 118px;
-}
-
-/* breadcrumb styles
-======================================== */
-#main #breadcrumb {
+/* Breadcrumb styles
+----------------------------------------------- */
+#breadcrumb {
 	margin-bottom: 10px;
 	color: #3c3c3c;
 	font-size: 12px;
 }
 
-#main #breadcrumb ul li {
+#breadcrumb ul li {
 	display: inline;
 }
 
-#main #breadcrumb ul li+li:before {
+#breadcrumb ul li+li:before {
 	content: "\00a0>\00a0 ";
 }
 
-#main #breadcrumb a:link, 
-#main #breadcrumb a:visited {
+#breadcrumb a:link, 
+#breadcrumb a:visited {
 	color: #0296d4;
 }
 
-#main #breadcrumb a:active, 
-#main #breadcrumb a:hover {
+#breadcrumb a:active, 
+#breadcrumb a:hover {
 	color: #0296d4;
 }
 
-/* privacypolicy styles
-======================================== */
+/* Privacypolicy styles
+----------------------------------------------- */
 #privacypolicy-wrapper {
 	width: 745px;
 }
@@ -262,55 +252,54 @@ nav form fieldset input {
 	line-height: 1.6em;
 }
 
-/* sidebar styles
-======================================== */
-aside a.izmaker img,
-aside a.kokoro img,
-aside a.sinagawa img,
-aside a.raitank img,
-aside #primary-adsense,
-aside #widget-facebook {
+/* Sidebar styles
+----------------------------------------------- */
+.izmaker,
+.sinagawa,
+.raitank,
+#primary-adsense,
+#widget-facebook {
 	margin-bottom: 20px;
 }
 
-aside .ads-wrapper a img {
+.ads-wrapper a img {
 	margin-bottom: 10px;
 }
 
-aside .ads-wrapper a:nth-child(2n+1) img {
+.ads-wrapper a:nth-child(2n+1) img {
 	margin-right: 20px;
 }
 
-/* popular-posts */
-aside #popular-posts {
+/* Popular posts */
+#popular-posts {
 	margin-bottom: 24px;
 	padding: 10px 16px;
 	border: 1px solid #d1d1d1;
 }
 
-aside #popular-posts h3 {
+#popular-posts h3 {
 	margin-bottom: 14px;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-aside #popular-posts img {
+#popular-posts img {
 	margin-right: 4px;
 	vertical-align: -8px;
 }
 
-aside #popular-posts ol {
+#popular-posts ol {
 	margin: 0;
     counter-reset: li;
 }
 
-aside #popular-posts li {
+#popular-posts li {
 	position: relative;
 	margin-bottom: 20px;
 	font-size: 12px;
 }
 
-aside #popular-posts ol li:before {
+#popular-posts ol li:before {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -325,18 +314,18 @@ aside #popular-posts ol li:before {
 	counter-increment: li;
 }
 
-aside #popular-posts li img {
+#popular-posts li img {
 	float: left;
 	width: 80px;
 	margin-right: 10px;
 }
 
-aside #popular-posts .pop-content {
+#popular-posts .pop-content {
 	float: right;
 	width: 170px;
 }
 
-aside #popular-posts .pop-content .pop-category a {
+#popular-posts .pop-category a {
 	display: block;
 	width: 85px;
 	margin-bottom: 10px;
@@ -348,27 +337,25 @@ aside #popular-posts .pop-content .pop-category a {
 	text-align: center;
 }
 
-/* todayブログ */
-aside #popular-posts .pop-content .pop-category a#blog,
-aside #popular-posts .pop-content .pop-category a#news,
-aside #popular-posts .pop-content .pop-category a#technique,
-aside #popular-posts .pop-content .pop-category a#interesting,
-aside #popular-posts .pop-content .pop-category a#life {
+#popular-posts .pop-category a#blog,
+#popular-posts .pop-category a#news,
+#popular-posts .pop-category a#technique,
+#popular-posts .pop-category a#interesting,
+#popular-posts .pop-category a#life {
 	background-color: #dd495a;
 }
 
-/* izmaker */
-aside #popular-posts .pop-content .pop-category a#izmaker,
-aside #popular-posts .pop-content .pop-category a#info,
-aside #popular-posts .pop-content .pop-category a#campaign,
-aside #popular-posts .pop-content .pop-category a#pickup,
-aside #popular-posts .pop-content .pop-category a#useful,
-aside #popular-posts .pop-content .pop-category a#magazine {
+#popular-posts .pop-category a#izmaker,
+#popular-posts .pop-category a#info,
+#popular-posts .pop-category a#campaign,
+#popular-posts .pop-category a#pickup,
+#popular-posts .pop-category a#useful,
+#popular-posts .pop-category a#magazine {
 	background-color: #22b6a3;
 }
 
-/* footer-area styles
-======================================== */
+/* Footer area styles
+----------------------------------------------- */
 #footer-area {
 	height: 200px;
 	margin-bottom: 20px;
@@ -407,37 +394,37 @@ aside #popular-posts .pop-content .pop-category a#magazine {
     left: 124px;
 }
 
-/* footer styles
-======================================== */
+/* Footer styles
+----------------------------------------------- */
 footer {
 	width: 1074px;
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
 
-footer nav {
+.navbar-footer {
 	float: left;
 }
 
-footer p small {
-	float: right;
-	font-size: 12px;
-}
-
-footer nav ul li {
+.navbar-footer ul li {
 	list-style-type: none;
 	float: left;
 	margin-right: 40px;
 }
 
-footer nav ul li a {
+.navbar-footer ul li a {
 	font-size: 12px;
 	text-decoration: none;
 }
 
-footer nav ul li a:link, 
-footer nav ul li a:visited,
-footer nav ul li a:active, 
-footer nav ul li a:hover {
+.navbar-footer ul li a:link, 
+.navbar-footer ul li a:visited,
+.navbar-footer ul li a:active, 
+.navbar-footer ul li a:hover {
 	color: #000000;
+}
+
+p.copyright small {
+	float: right;
+	font-size: 12px;
 }

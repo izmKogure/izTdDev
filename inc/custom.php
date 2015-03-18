@@ -1,10 +1,4 @@
 <?php
-// favicon表示(管理画面)
-function admin_favicon() {
-  echo '<link rel="shortcut icon" type="image/x-icon" href="'.get_stylesheet_directory_uri().'/images/favicon.ico" />';
-}
-add_action('admin_head', 'admin_favicon');
-
 //プロフィール項目を追加
 function my_new_contactmethods( $contactmethods ) {
 $contactmethods['worker'] = '担当';

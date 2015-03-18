@@ -28,7 +28,7 @@
 		<div class="logo">
 			<a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.gif" alt="logo" width="594" height="81"></a>
 		</div>
-		<nav id="global" role="navigation">
+		<nav class="navbar-header" role="navigation">
 			<div class="nav-wrapper clearfix">
 				<div class="nav-inner clearfix">
 					<span class="home-buttom">
