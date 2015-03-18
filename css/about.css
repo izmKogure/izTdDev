@@ -30,6 +30,7 @@ a:active {
 }
 
 aside {
+	position: relative;
 	float: right;
 	width: 300px;
 }
@@ -313,6 +314,14 @@ header div.logo {
 	margin-bottom: 20px;
 }
 
+#primary-adsense {
+	height: 602px;
+}
+
+.ads-wrapper {
+	width: 300px;
+}
+
 .ads-wrapper a img {
 	margin-bottom: 10px;
 }
@@ -321,8 +330,13 @@ header div.logo {
 	margin-right: 20px;
 }
 
+#widget-facebook {
+	height: 642px;
+}
+
 /* Popular posts */
 #popular-posts {
+	height: 1043px;
 	margin-bottom: 24px;
 	padding: 10px 16px;
 	border: 1px solid #d1d1d1;
