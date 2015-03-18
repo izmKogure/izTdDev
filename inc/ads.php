@@ -11,9 +11,6 @@ data-ad-slot="2949017436"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
 style="display:inline-block;width:120px;height:600px"
