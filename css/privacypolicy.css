@@ -37,7 +37,7 @@ aside {
 
 /* Header styles
 ----------------------------------------------- */
-header div.logo {
+header .logo {
 	width: 1074px;
 	margin: 28px auto 27px auto;
 }
@@ -68,24 +68,26 @@ header div.logo {
 }
 
 .navbar-header .menu-header-nav-container {
-	float: left;
+	float: right;
 	width: 320px;
 }
 
 .navbar-header ul {
-	list-style: none;
-}
-
-.navbar-header ul.menu {
-	width: 320px;
-	height: 40px;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar-header ul li {
+	list-style: none;
 	position: relative;
-	float: left;
-	z-index: 2;
 	width: 140px;
+	height 40px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 40px;
 	text-align: center;
 }
 
@@ -106,57 +108,72 @@ header div.logo {
 	display: block;
 	border-top: solid 2px #3c3c3c;
 	border-bottom: solid 2px #dd495a;
-	font-size: 14px;
+	color: #ffffff;
 	font-weight: bold;
 	line-height: 36px;
+	text-decoration: none;
 }
 
 .navbar-header ul li.izmaker a {
 	border-bottom: solid 2px #22b6a3;
 }
 
-.navbar-header ul li a:link, 
-.navbar-header ul li a:visited,
-.navbar-header ul li a:hover, 
-.navbar-header ul li a:active {
-	color: #ffffff;
-}
-
 /* Sub menu */
-.navbar-header ul.sub-menu {
-	display: none;
+.navbar-header .sub-menu {
   	position: absolute;
+  	top: 40px;
+  	width: 140px;
+  	z-index: 100;
   	-moz-box-shadow: rgba(6,6,6,0.50) 0px 4px 5px 0px;
   	-webkit-box-shadow: rgba(6,6,6,0.50) 0px 4px 5px 0px;
   	box-shadow: rgba(6,6,6,0.50) 0px 4px 5px 0px;
-  	background-color: #dd495a;
 }
 
-.navbar-header ul.sub-menu li.info,
-.navbar-header ul.sub-menu li.campaign, 
-.navbar-header ul.sub-menu li.pickup,
-.navbar-header ul.sub-menu li.useful,
-.navbar-header ul.sub-menu li.magazine {
+.navbar-header .sub-menu li {
+	visibility: hidden;
+	overflow: hidden;
+	width: 140px;
+	height: 0;
+	background-color: #dd495a;
+}
+
+.navbar-header li.izmaker .sub-menu li {
 	background-color: #22b6a3;
 }
 
-.navbar-header ul.sub-menu li a {
-	padding-left: 10px;
-	border-style: none;
+.navbar-header .sub-menu li a,
+.navbar-header li.izmaker .sub-menu li a {
+	border: none;
 	font-weight: normal;
-	text-align: left;
+	line-height: 40px;
 }
 
-.navbar-header ul li:hover ul.sub-menu {
-    display: block;
-}
-
-.navbar-header ul.sub-menu li a:hover {
-	opacity:0.3;
-	filter: alpha(opacity=30);
-	-ms-filter: "alpha( opacity=30 )";
+.navbar-header .sub-menu li:hover,
+.navbar-header .sub-menu li a:hover {
 	background-color: #ffffff;
-	color: #333333;
+	color: #dd495a;
+}
+
+.navbar-header li.izmaker .sub-menu li:hover, 
+.navbar-header li.izmaker .sub-menu li a:hover {
+	background-color: #ffffff;
+	color: #22b6a3;
+}
+
+.navbar-header ul li:hover ul li, 
+.navbar-header ul li a:hover ul li {
+	visibility: visible;
+	overflow: visible;
+	height: 40px;
+	z-index: 10;
+}
+
+.navbar-header * {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /* Form search */

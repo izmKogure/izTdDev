@@ -16,11 +16,11 @@ window.onload=function() {
     var sidebarSub = jQuery(".aside-wrapper");
     // サイドバーを固定したい位置を取得し変数に代入
 　　var sidebarScrollStop
-    = jQuery("header").height() + jQuery(".aside-wrapper").height() + 20 + 20
+    = jQuery("header").height() + jQuery(".aside-wrapper").height() + 100 + 0
     - w.height();
     // サイドバーの固定を解除したい位置を取得し変数に代入
     var sidebarScrollStart
-    = jQuery("header").height() + jQuery("#content").height() + 20
+    = jQuery("header").height() + jQuery("#content").height() + 100
     - w.height();
 
     // ウィンドウがスクロールされた時に処理を実行
@@ -32,13 +32,13 @@ window.onload=function() {
       && w.scrollTop() < sidebarScrollStart) {
 
         // サイドバーを固定する処理
-        sidebarSub.css({"position": "fixed", "bottom": "0"});
+        sidebarSub.css({"position": "fixed", "bottom": "0px"});
 
       // 「scrollTopの位置」が「サイドバーの固定を解除したい位置」より大きい時
       } else if(w.scrollTop() >= sidebarScrollStart) {
 
         // サイドバーの固定を解除する処理
-        sidebarSub.css({"position": "absolute", "bottom": "20px"});
+        sidebarSub.css({"position": "absolute", "bottom": "0px"});
 
       // それ以外のとき
       // （「scrollTopの位置」が「サイドバーを固定したい位置」より小さい時）
