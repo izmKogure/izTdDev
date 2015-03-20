@@ -135,7 +135,7 @@ a:active {
 ----------------------------------------------- */
 #page {
 	width: 100%;
-	margin: 0 auto;
+	margin: 28px auto 0;
 	background-color: #ffffff;
 }
 
@@ -158,13 +158,9 @@ aside {
 
 /* Header styles
 ----------------------------------------------- */
-#header {
-	margin-top: 28px;
-}
-
 #header .logo {
 	width: 1074px;
-	margin: 0px auto 27px;
+	margin: 0 auto 27px;
 }
 
 .navbar-header {
