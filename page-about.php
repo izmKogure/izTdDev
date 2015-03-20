@@ -23,11 +23,6 @@
 					<p>サービスに関する事、記事のご意見・ご要望等ございましたら、お気軽にお問合せください。</p>
 					<?php echo do_shortcode( '[contact-form-7 id="349" title="コンタクトフォーム 1"]' ); ?>
 				</section>
-				
-				<div id="fb-like-box">
-					<?php echo do_shortcode('[li_facebook]'); ?>	
-				</div>
-			
 			</div><!-- #about-wrapper -->
 		
 		</div><!-- #main -->

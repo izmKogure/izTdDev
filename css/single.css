@@ -421,22 +421,22 @@ article .entry-footer {
 	line-height: 26px;
 }
 
-#staff-area dl dd.list {
+#staff-area dl dd.staff-list {
 	height: 12px;
 	margin-top: -20px;
 	padding-left: 640px;
 }
 
-#staff-area dl dd.list p a:link,
-#staff-area dl dd.list p a:visited, 
-#staff-area dl dd.list p a:hover,
-#staff-area dl dd.list p a:active { 	
+#staff-area dl dd.staff-list p a:link,
+#staff-area dl dd.staff-list p a:visited, 
+#staff-area dl dd.staff-list p a:hover,
+#staff-area dl dd.staff-list p a:active { 	
 	color: #ffffff;
 	font-size: 12px;
 	font-weight: bold;
 }
 
-#staff-area dl dd.worker {
+#staff-area dl dd.staff-worker {
 	height: 20px;
 	margin-top: 34px;
 	padding-left: 220px;
@@ -445,20 +445,20 @@ article .entry-footer {
 	font-weight: bold;
 }
 
-#staff-area dl dd.worker span {
+#staff-area dl dd.staff-worker span {
 	line-height: 1em;
 }
 
-#staff-area dl dd.worker span a:link,
-#staff-area dl dd.worker span a:visited,
-#staff-areadl dd.worker span a:active, 
-#staff-area dl dd.worker span a:hover {
+#staff-area dl dd.staff-worker span a:link,
+#staff-area dl dd.staff-worker span a:visited,
+#staff-area dl dd.staff-worker span a:active, 
+#staff-area dl dd.staff-worker span a:hover {
 	color: #ffffff;
 	font-size: 20px;
 	font-weight: bold;
 }
 
-#staff-area dl dd.description {
+#staff-area dl dd.staff-description {
 	margin-top: 20px;
 	padding: 0 20px 0 220px;
 	color: #ffffff;

@@ -32,22 +32,18 @@
 			
 				<?php endif; ?>
 				
-				<footer class="entry-footer">
-					<div id="social">
-						<?php echo do_shortcode('[bu_ninja]'); ?>	
-					</div>
-						
+				<footer class="entry-footer">	
 					<div id="secondary-adsense">
 						<?php echo do_shortcode('[sec_ad]'); ?>
 					</div><!-- #secondary-adsense -->
 					
 					<div id="staff-area">
 						<dl>
-							<dt><div class="avatar"><?php echo get_avatar(get_the_author_id(), 200); ?></div></dt>
+							<dt><div class="staff-avatar"><?php echo get_avatar(get_the_author_id(), 200); ?></div></dt>
 							<dd class="first-child"><h3>この記事を書いた人</h3></dd>
-							<!--<dd class="list"><p><a href="?page_id=23">スタッフ一覧</a></p></dd>-->
-							<dd class="worker"><p><?php the_author_meta('worker'); ?>&nbsp;&nbsp;<span class="worker-links"><?php the_author_posts_link(); ?></span></p></dd>
-							<dd class="description"><p><?php the_author_meta('user_description'); ?></p></dd>
+							<!--<dd class="staff-list"><p><a href="?page_id=23">スタッフ一覧</a></p></dd>-->
+							<dd class="staff-worker"><p><?php the_author_meta('worker'); ?>&nbsp;&nbsp;<span class="worker-links"><?php the_author_posts_link(); ?></span></p></dd>
+							<dd class="staff-description"><p><?php the_author_meta('user_description'); ?></p></dd>
 						</dl>	
 					</div><!-- #staff -->
 						
@@ -90,11 +86,6 @@
 					</div><!-- #comments -->
 				</footer>
 			</article><!-- #article -->
-		
-			<div id="fb-like-box">
-				<?php echo do_shortcode('[li_facebook]'); ?>	
-			</div>
-		
 		</div><!-- #main -->
 <?php get_sidebar(); ?>
 	</div><!-- #content -->

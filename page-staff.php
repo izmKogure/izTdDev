@@ -9,24 +9,34 @@
 			<div id="staff-wrapper">
 				<h2><img src="<?php echo get_template_directory_uri(); ?>/images/icon_topics.png" alt="icon_topics" width="16" height="20">スタッフ紹介</h2>
 				
-				<div class="staff-content clearfix">
-					<?php
-						$blogusers = get_users(array(
-						        'orderby' => ID,
-						        'order'   => ASC,
-						        'exclude' => 1,
-						    )
-						);
-						
-						foreach ( $blogusers as $user ) {
-							echo '<div class="avatar">' . get_avatar( $user->ID, 200 ) . '</div>';
-						    echo '<div class="name">' . esc_html( $user->display_name ) . '</div>';
-							echo '<div class="worker">' . esc_html( $user->worker ) . '</div>';
-							echo '<p>' . '投稿数:' .count_user_posts( $user->ID ) . '</p>';
-							echo '<p>' . esc_html( $user->user_description ) . '</p>';
-						}
-					?>
-				</div>
+			   <?php
+				$users = get_users(array(
+				    'orderby' => ID,
+				    'order'   => ASC,
+				    'exclude' => 1,
+				));
+				
+				foreach ($users as $user):
+				    $uid      = $user->ID;
+				    $userData = get_userdata($uid);
+					echo '<dl>';
+				    echo '<dt><div class="staff-avatar">';
+				    echo get_avatar($uid, 60);
+				    echo '</div></dt>';
+				    echo '<dd class="first-child"><p class="staff-name">' . $user->display_name . '</p></dd>';
+					echo '<dd><p class="staff-worker">' . $user->worker . '</p></dd>';
+					echo '<dd>' . '投稿数:' .count_user_posts( $user->ID ) . '</dd>';
+				    echo '<dd><p>' . $userData->user_description . '</p></dd>';
+				    echo '<dd>';
+				    if (count_user_posts($uid) > 0):
+				        echo '<a class="userposts" href="' . get_bloginfo(url) . '/?author=' . $uid . '">' . $user->display_name . 'の全ての投稿を見る</a>';
+				    else:
+				        echo '<span class="userposts-noposts">' . $user->display_name . 'の投稿は、まだありません。</span>';
+				    endif;
+				    echo '</dd>';
+					echo '</dl>';
+				endforeach;
+				?>
 			</div><!-- #staff-wrapper -->
 		
 		</div><!-- #main -->
