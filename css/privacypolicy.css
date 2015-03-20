@@ -37,9 +37,13 @@ aside {
 
 /* Header styles
 ----------------------------------------------- */
-header .logo {
+#header {
+	margin-top: 28px;
+}
+
+#header .logo {
 	width: 1074px;
-	margin: 28px auto 27px auto;
+	margin: 0px auto 27px;
 }
 
 .navbar-header {
